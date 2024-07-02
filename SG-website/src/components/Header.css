@@ -1,0 +1,123 @@
+
+.header {
+  position: relative;
+  text-align: center;
+  color: white;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  z-index: 0;
+}
+
+.header img.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.header .chevron-left,
+.header .chevron-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.header .chevron-left {
+  left: 10px;
+}
+
+.header .chevron-right {
+  right: 10px;
+}
+
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 80%;
+  z-index: 2;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.header-content h1,
+.header-content h3,
+.header-content h4 {
+  margin: 0;
+}
+
+.header-content h1 {
+  font-size: 3rem;
+  color: #a2c306;
+}
+
+.header-content h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.header-content h4 {
+  font-size: 1rem;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.header-content.fadeIn {
+  animation-name: fadeIn;
+}
+
+.header-content.slideInFromLeft {
+  animation-name: slideInFromLeft;
+}
+
+.header-content.slideInFromRight {
+  animation-name: slideInFromRight;
+}
