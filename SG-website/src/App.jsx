@@ -5,24 +5,25 @@ import "./components/Header.css";
 import "./components/Nav.css";
 import Nav from "./components/Nav"
 import Header from "./components/Header"
-import Welcome from "./components/Welcome"
+// import Welcome from "./components/Welcome"
 
-function App() {
+export default function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <div>
+      {/* hi */}
       <div className="Nav">
         <Nav/>
       </div>
       <div>
         <Header/>
       </div>
-      <div>
+      {/* <div>
         <Welcome/>
-      </div>
+      </div> */}
     </div>
   )
 }
 
-export default App
+// export default App
