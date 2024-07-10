@@ -39,7 +39,7 @@
     background-color: #ffffff;
   }
   
-  button {
+  /* button {
     display: inline-block;
     margin-bottom: 20px;
     padding: 10px 20px;
@@ -48,12 +48,12 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
+  } */
   
-  button:hover {
+  /* button:hover {
     background-color: #3a7a25;
   }
-  
+   */
   .pagination {
     display: flex;
     justify-content: center;

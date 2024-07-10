@@ -12,7 +12,7 @@ const Socialeventmain = () => {
         <div>
           <h2>Domestic Events to our Credit pertaining to Hospitality, Manpower, and Concierge Services</h2>
           <div className="year-wise">
-            <div className="year1">
+            <div className="year1,card">
               <h2>2016-2017</h2>
               <ul>
                 <li>INDIA PHARMA 2016</li>
@@ -48,22 +48,7 @@ const Socialeventmain = () => {
                 <li>International Arogya 2019</li>
               </ul>
             </div>
-            <div className="year3">
-              <h2>2023-2024</h2>
-              <ul>
-                <li>Manthan (at Bangalore) 2023</li>
-                <li>Higher Education Submit 2023</li>
-                <li>Road Safety at Pusa 2023</li>
-                <li>India Steel 2023</li>
-                <li>G20 Bangalore 2023</li>
-                <li>G20 Gandhinagar 2023</li>
-                <li>G20 Mumbai 2023</li>
-                <li>World Food India 2023</li>
-                <li>Stonemart 2024 at Jaipur</li>
-                <li>Bharattech 2024 at Delhi</li>
-                <li>EIMA AGRIMACH at Bangalore 2024</li>
-              </ul>
-            </div>
+            
           </div>
         </div>
         <div className="gallery">

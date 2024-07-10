@@ -21,7 +21,7 @@ const Nav = () => {
         <Link to="/AboutUs"><img src={logo} alt="Sanskaar Group Logo" /></Link>
       </div>
       <div className="navbar-menu">
-        <ul className="nav-list">
+        <ul className="nav-list button">
           <li ><Link to="/">Home</Link></li>
           <li><Link to="/AboutUs">About Us</Link></li>
           <li><Link to="/Services">Services</Link></li>

@@ -7,8 +7,6 @@
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   justify-content: space-between;
-
-  
 }
 
 .navbar-logo {
@@ -39,6 +37,13 @@
 .nav-list li {
   display: inline;
 }
+.nav-list li:hover{
+  border: #918d8d;
+  border-width: 1px;
+  border: #a2c306;
+  border-color: #918d8d;
+  
+}
 
 .nav-list li a {
   text-decoration: none;
@@ -55,7 +60,7 @@
 .nav-list li a:hover,
 .nav-list li.active a {
   color: #000000; 
-  background-color: #a2c306;
+  border: #918d8d;
   border-radius: 4px;
 }
 
@@ -66,9 +71,12 @@
   padding: 5px 10px;
   transition: background-color 0.3s, transform 0.3s;
 }
+.active{
+  color: #a2c306;
+}
 
 .nav-list li.contact a:hover {
-  background-color: #8da006;
+  border: #000000;
 }
 
 .nav-btn{
@@ -130,6 +138,6 @@
 }
 
 .sidebar li.contact a:hover {
-  background-color: #8da006;
+  border: #666;
 }
 
