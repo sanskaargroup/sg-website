@@ -1,0 +1,51 @@
+.full{
+    /* background-color: #e0e0e0; */
+}
+.thought-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 30vh;
+    width: 80vw;
+    position: relative;
+    margin: 40px auto; 
+    
+  }
+  
+  .thought-text {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #555;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .quote-icon {
+    font-size: 2rem;
+    color: #555;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+  }
+  
+  .left {
+    left: -60px;
+  }
+  
+  .right {
+    right: -60px;
+  }
+  
+  .thought-container.animate .quote-icon {
+    opacity: 1;
+  }
+  
+  .thought-container.animate .left {
+    transform: translateX(50px);
+  }
+  
+  .thought-container.animate .right {
+    transform: translateX(-50px);
+  }
+  

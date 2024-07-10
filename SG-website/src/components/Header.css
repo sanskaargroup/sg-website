@@ -1,9 +1,10 @@
-
 .header {
   position: relative;
   text-align: center;
   color: white;
   height: 80vh;
+  /* border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px; */
   overflow: hidden;
 }
 
@@ -15,13 +16,19 @@
   top: 0;
   left: 0;
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 2s ease-in-out, transform 2s ease-in-out; /* Added transform transition */
   z-index: 0;
+  /* border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px; Added border radius to images */
 }
 
 .header img.active {
   opacity: 1;
   z-index: 1;
+}
+
+.header:hover img.active {
+  transform: scale(1.01); /* Apply the scale transformation on hover */
 }
 
 .header .chevron-left,
@@ -54,7 +61,7 @@
   text-align: center;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 19px;
   max-width: 80%;
   z-index: 2;
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
@@ -79,6 +86,7 @@
 .header-content h4 {
   font-size: 1rem;
 }
+
 @keyframes fadeIn {
   from {
     opacity: 0;

@@ -1,0 +1,70 @@
+.portfolio-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #e0e0e0;
+    
+  }
+  
+  .animated-button {
+    background-color: #8cc63f; 
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .animated-button:hover {
+    background-color: #6d9c30; 
+    scale: 1.1;
+    transition-duration: 800ms;
+  }
+  
+  .animated-button:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    /* background: rgba(255, 255, 255, 0.15); */
+    transition: all 0.75s ease-in-out;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.1);
+  }
+  
+  .animated-button:hover:before {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .animated-button:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    /* background: rgba(255, 255, 255, 0.25); */
+    transition: all 0.3s ease-in-out;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+  }
+  
+  .animated-button:hover:after {
+    width: 200%;
+    height: 200%;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  

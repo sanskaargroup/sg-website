@@ -1,0 +1,50 @@
+.touch-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    height: 50vh; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .touch-box {
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 20px;
+    padding: 20px 40px;
+    text-align: center;
+    width: 40%;
+    color: white;
+    margin: 10px;
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1px solid rgba(16, 16, 16, 0.3); 
+  }
+  
+  .touch-box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .touch-box p {
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  .touch-button {
+    background-color: #8cc63f; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .touch-button:hover {
+    background-color: #218838; 
+    transform: scale(1.05);
+  }
+  

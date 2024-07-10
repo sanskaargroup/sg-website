@@ -1,0 +1,100 @@
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+  }
+  
+  .blog-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .blog-card {
+    background: rgb(255, 255, 255);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  .blog-card h2{
+    text-decoration: justify;
+    font-size: 1.7rem;
+
+  }
+  .blog-card h3{
+    text-decoration: justify;
+    font-size: 1rem;
+    font-weight: 100;
+  }
+  
+  .blog-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .blog-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .blog-card h2, .blog-card h3 {
+    margin: 10px;
+  }
+  
+  .blog-detail {
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    /* border: 1px solid #ddd; */
+    border-radius: 10px;
+    width:100%;
+    max-width: 800px;
+  }
+  .blogtext{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .blog-detail img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  /* .blog-detail img:hover{
+    scale: 0.5;
+  } */
+  bhai esne dimaak ka dahi kr diya hai need some help
+  
+  .blog-detail h1, .blog-detail h3 {
+    margin: 25px 0;
+  }
+  .blog-detail h3{
+    font-weight: 100;
+    font-size: 50;
+  }
+  
+  .pagination {
+    margin: 20px 0;
+  }
+  
+  .pagination button {
+    background: #55b236;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .pagination button.active, .pagination button:hover {
+    background: #3b7b25;
+  }
+  
