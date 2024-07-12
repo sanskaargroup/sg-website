@@ -72,7 +72,7 @@
   .info img {
     height: 150px;
     width: 250px;
-    border-radius: 2rem;
+    
     transition: transform 0.3s ease-in-out;
   }
   
@@ -132,26 +132,26 @@
   
   .info img:hover {
     transform: scale(1.1);
+    border-radius: 2rem;
   }
   
-  h3 {
-    margin: 10px 0;
+  .main h3 {
+    margin: 5px 0;
     font-size: 24px;
     transition: color 0.3s ease-in-out;
   }
-  
-  /* h3:hover {
-    color: #8cc63f;
-  } */
-  
+
+
   p {
-    font-size: 16px;
+    text-align: justify;
+    font-size: 15px;
     color: #555;
     transition: color 0.3s ease-in-out;
   }
+
   
-  p:hover {
-    color: #333;
+  .main p:hover {
+    color: black;
   }
   
   @keyframes fadeInUp {

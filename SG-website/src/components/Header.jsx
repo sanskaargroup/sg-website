@@ -75,7 +75,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import BackgroundImage1 from "../image/z8.jpg"
 import BackgroundImage2 from "../image/z6.jpg"
 import BackgroundImage3 from "../image/z4.jpg"
-import BackgroundImage4 from "../image/z3.jpg"
+import BackgroundImage4 from "../image/header1.jpg"
 import BackgroundImage5 from "../image/animate.gif"
 import TrackVisibility from 'react-on-screen';
 import './Header.css';
@@ -86,7 +86,7 @@ export const Header = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Welcome to Sanskaar Group", "We are here only for you" ];
+  const toRotate = [ "Welcome to Sanskaar Group", "“We handle...    You celebrate..." ];
   const period = 2000;
 
   useEffect(() => {
@@ -123,7 +123,7 @@ export const Header = () => {
   }
 
   return (
-    <section className="banner" id="home" style={{ backgroundImage: `url(${BackgroundImage5})`}}>
+    <section className="banner" id="home" style={{ backgroundImage: `url(${BackgroundImage5})`, objectFit: 'cover'}}>
       <Container className="container">
         <Row className="align-items-center">
           <Col>
@@ -131,26 +131,26 @@ export const Header = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 
-                <h1>{` `} <span className="txt-rotate" dataPeriod="3000" data-rotate='[ "Welcome to Sanskaar Group", "We are here only for you" ]'><span className="wrap">{text}</span></span></h1>
+                <h1>{` `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Welcome to Sanskaar Group", "“We handle...     You celebrate...”" ]'><span className="wrap">{text}</span></span></h1>
                   <p>Established in 2013, Sanskaar is renowned for its personalized event management services, catering to corporate and social events. With fully-equipped in-house production facilities and offices in Noida and Gurugram, our global presence in the Middle East and CIS countries enables us to deliver exceptional, tailor-made event solutions, ensuring every event is a success.</p>
                   <button  className="learn-more"><span className="circle" aria-hidden="true"><span className="icon arrow"></span></span><span className="button-text">Know more</span></button>
               </div>}
             </TrackVisibility>
           </Col>
           <Col>
+            <div className="h-card">
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <div className="main">
-                    <div className="card" id="c1" style={{ backgroundImage: `url(${BackgroundImage1})`}}></div>
-                    <div className="card" id="c2" style={{ backgroundImage: `url(${BackgroundImage2})`}}></div>
-                    <div className="card" id="c3" style={{ backgroundImage: `url(${BackgroundImage3})`}}></div>
-                    <div className="card" id="c4" style={{ backgroundImage: `url(${BackgroundImage4})`}}></div>
+                  <div className="imagemain">
+                    <div className="card" id="c1" style={{ backgroundImage: `url(${BackgroundImage1})`, objectFit: 'cover', backgroundPosition: 'center', backgroundSize: 'cover',}}></div>
+                    <div className="card" id="c2" style={{ backgroundImage: `url(${BackgroundImage2})`, objectFit: 'cover', backgroundPosition: 'center', backgroundSize: 'cover',}}></div>
+                    <div className="card" id="c3" style={{ backgroundImage: `url(${BackgroundImage3})` , objectFit: 'cover', backgroundPosition: 'center', backgroundSize: 'cover',}}></div>
+                    <div className="card" id="c4" style={{ backgroundImage: `url(${BackgroundImage4})`, objectFit: 'cover', backgroundPosition: 'center', backgroundSize: 'cover',  }}></div>
                   </div>
-                  
-
                 </div>}
             </TrackVisibility>
+            </div>
           </Col>
         </Row>
       </Container>

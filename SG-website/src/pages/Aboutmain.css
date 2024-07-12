@@ -28,6 +28,7 @@
   }
   
   .intro .icon {
+    color: #517225;
     position: absolute;
     bottom: -50px;
     left: 50%;
@@ -121,6 +122,11 @@
     gap: 20px;
     align-items: center;
 
+  }
+  .ethos img {
+    width: 380px;
+    height: 300px;
+    border-radius: 5px;
   }
   
   .about-us-right {

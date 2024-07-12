@@ -38,11 +38,9 @@
     height: 80vh;
     background-color: rgb(255, 255, 255);
     padding: 0px 60px 60px 60px;
-  }
-  .team-container:hover{
     
   }
-  img{
+  .team-member img{
     margin-bottom: 20px;
   }
   .team-member {
@@ -51,21 +49,26 @@
     padding: 40px;
     margin-top: 6%;
     height: 80%;
-    background-color: #ffffff;
-    transition: transform 0.3s;
+    position: relative;
     width: 20vw;
+    transition: 0.5s ease-out;
+    overflow: visible;
+    border-radius: 30px;
+    background: #f7f7f7;
+    box-shadow: 15px 15px 30px #bebebe,
+             -15px -15px 30px #ffffff;
   }
-  
-  .team-member:hover {
-    transform: scale(1.05);
-    background: rgba(255, 255, 255, 0.2); /* Transparent white background */
-    border-top-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-    backdrop-filter: blur(10px); /* Frosted glass effect */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Border to enhance the glass effect */
-  }
-  
+   .team-member:hover {
+    border-color: #55b54e;
+    box-shadow: 0 4px 18px 0 rgba(89, 133, 58, 0.25);
+   }
+   
+   .team-member:hover .profile {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+    border-color: #55b54e;
+    border: 4px;
+   }
   
   .team-member img {
     border-radius: 50%;
@@ -74,9 +77,8 @@
     object-fit: cover;
   }
   .team-member img:hover{
-    border-radius: 0%;
-    border-top-left-radius: 40px;
-    border-bottom-right-radius: 40px
+    border-radius: 5%;
+    transition: 0.5s ease-out;
   }
   
   .team-member h3 {
@@ -86,6 +88,8 @@
   .team-member p {
     margin: 5px 0 15px 0;
     color: #999;
+    text-decoration: none;
+    text-align: center;
   }
   
   .social-icons a {
@@ -100,19 +104,23 @@
     color: #15872e;
   }
   
-  .team-container button {
-    background-color: #8cc63f; 
-    color: white;
+  .profile {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    background-color: #4cb940;
+    color: #ffffff;
     font-size: 1rem;
-    margin-top: 60px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    padding: .5rem 2rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
   }
   
-  .team-container button  {
+  .profile:hover  {
     background-color: #218838; 
     transform: scale(1.05);
   }

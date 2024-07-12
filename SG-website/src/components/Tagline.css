@@ -15,23 +15,28 @@
     z-index: -1;
   }
   
-  .content {
+  .enjoy {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: white;
     z-index: 1;
   }
   
-  .content h1 {
+  .enjoy h1 {
     font-size: 2.5rem;
     font-weight: bold;
+    color: white;
   }
   
-  .content p {
+  .enjoy p {
     font-size: 1rem;
-    color: azure;
+    color: rgb(255, 255, 255);
   }
   

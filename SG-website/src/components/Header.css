@@ -172,6 +172,9 @@
   font-size: inherit;
   font-family: inherit;
  }
+ .container{
+  margin-left: 5rem;
+ }
  
  button.learn-more {
   width: 12rem;
@@ -251,14 +254,15 @@
   border-radius: 5px;
   width: 400px;
   height: 500px;
-  margin-top: 35px;
+  margin-left: 10rem;
+  margin-top: 2px;
   position: absolute;
   transition: .3s ease-in-out;
   cursor: pointer;
   box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.3) ;
 }
-.main {
-  display: grid;
+.imagemain {
+  /* display: grid; */
   width: 600px;
   height: 50vmax;
   place-items: center;
@@ -267,19 +271,19 @@
   
 }
 
-.main:hover #c1 {
+.imagemain:hover #c1 {
   transform: translateX(-100px) rotate(-40deg);
 }
 
-.main:hover #c2 {
+.imagemain:hover #c2 {
   transform: translateX(-50px) rotate(-30deg);
 }
 
-.main:hover #c3 {
+.imagemain:hover #c3 {
   transform: translateX(0) rotate(-20deg);
 }
 
-.main:hover #c4 {
+.imagemain:hover #c4 {
   transform: translateX(50px) rotate(-10deg);
 }
 
@@ -315,10 +319,10 @@
   opacity: 0;
 }
 
-#c1:hover,
+/* #c1:hover,
 #c1:hover ~ #c2,
-#c1:hover ~ #c3,
-#c1:hover ~ #c4 {
+#c1:hover ~ #c3, */
+#c1:hover  {
   opacity: 1 !important;
 }
 #c2:hover ~ .card:not(#c1) {
@@ -334,52 +338,17 @@
 }
 
 .card:hover {
-  opacity: 1 !important;
+  opacity: 1!important;
 }
 
 
-h1 {
+.align-items-center h1 {
   font-size: 3.3em;
   margin-bottom: 20px;
   color: #333;
 }
 
-h1 .txt-rotate > .wrap {
+.align-items-center h1 .txt-rotate > .wrap {
   border-right: 0.08em solid #569945;
 }
 
-p {
-  font-size: 1.2em;
-  color: #555;
-}
-
-
-
-
-/* @media (max-width: 768px) {
-  h1 {
-    font-size: 2em;
-  }
-
-  p {
-    font-size: 1em;
-  }
-
-  button {
-    font-size: 1em;
-  }
-}
-
-@media (max-width: 576px) {
-  h1 {
-    font-size: 1.5em;
-  }
-
-  p {
-    font-size: 0.9em;
-  }
-
-  button {
-    font-size: 0.9em;
-  }
-} */

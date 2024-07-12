@@ -1,5 +1,6 @@
 import { FaChevronDown } from "react-icons/fa";
 import BackgroundImage from '../image/T5.jpg'; 
+import BackgroundImage1 from '../image/K1.jpg'; 
 import "./Team.css"
 import D1 from "../image/D1.jpg"
 const teamMembers = [
@@ -51,7 +52,7 @@ const teamMembers = [
 const Team = () => {
     
   return (
-    <div className="mem">
+    <div className="mem" >
         <div className="intro" style={{ backgroundImage: `url(${BackgroundImage})`}}>
             <div className="text">
                 <h2>OUR CREATIVES</h2>
@@ -62,7 +63,7 @@ const Team = () => {
                 <FaChevronDown />
             </div>  
     </div>
-    <div className="team-container">
+    <div className="team-container" >
       {teamMembers.map((member, index) => (
         <div className="team-member" key={index}>
           <img src={member.image} alt={member.name} />
@@ -75,7 +76,7 @@ const Team = () => {
             <a href={member.social.skype} target="_blank" rel="noopener noreferrer">S</a>
             <a href={member.social.twitter} target="_blank" rel="noopener noreferrer">T</a>
           </div>
-          <button className="button">View Profile</button>
+          <button className="profile">View Profile</button>
         </div>
       ))}
     </div>

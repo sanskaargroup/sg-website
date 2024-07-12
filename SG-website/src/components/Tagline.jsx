@@ -6,9 +6,9 @@ const Tagline = () => {
       <video autoPlay loop muted className="background-video">
         <source src={BackgroundVideo} type="video/mp4" />
       </video>
-      <div className="content">
+      <div className="enjoy">
         <h1>“WE TAKE CARE OF PREPARATION, YOU ENJOY THE CELEBRATION”</h1>
-        <p>Call Us at +91-9810169720 and check out our great features, we hope you enjoy it.</p>
+        <p>Call Us at +91-98101 69720 and check out our great features, we hope you enjoy it.</p>
       </div>
     </div>
   )
