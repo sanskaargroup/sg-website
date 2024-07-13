@@ -1,9 +1,9 @@
 import "./Socialeventmain.css";
-
+import coming from "../image/coming.gif"
 const Socialeventmain = () => {
   return (
-    <div>
-      Coming Soon
+    <div className="coming">
+      <img src={coming} alt="" />
     </div>
   );
 };

@@ -1,0 +1,10 @@
+.coming img{
+    width: 30vw;
+    height: 55vh;
+}
+.coming{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem;
+}

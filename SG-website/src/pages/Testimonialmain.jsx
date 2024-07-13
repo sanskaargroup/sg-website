@@ -1,8 +1,11 @@
 
-
+import coming from "../image/coming.gif"
+import "./Testimonialmain.css"
 const Testimonialmain = () => {
   return (
-    <div>Testimonialmain</div>
+    <div className="coming">
+      <img src={coming} alt="" />
+    </div>
   )
 }
 

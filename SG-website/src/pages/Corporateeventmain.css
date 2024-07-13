@@ -1,0 +1,27 @@
+.ce-intro{
+    display: flex;
+    justify-content: center;
+    
+}
+.year-wise img{
+    width: 350px;
+    height: 300px;
+}
+.year0-content{
+    display: flex;
+    justify-content: center;
+    gap: 9rem;
+    margin-bottom: 4rem;
+}
+.year-intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line-intro{
+    width: 30rem;
+    height: 0.1rem;
+    background-color: black;
+    margin: 4rem;
+    border-radius: 50rem;
+}
