@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    /* background:linear-gradient(135deg,  #c3e390 4%,#e6f7cb 54%,#d9fc97 74%); */
+    padding: 20px 0;
+    margin-top: 4.3rem;
+    
+  }
+  
+  .stat-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .stat-number {
+    font-size: 4em;
+    font-weight: 400;
+    color: #333;
+  }
+  
+  .stat-label {
+    font-size: 0.8em;
+    color: #6db15e;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+  

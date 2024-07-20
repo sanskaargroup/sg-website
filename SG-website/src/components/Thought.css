@@ -1,6 +1,4 @@
-.full{
-    /* background-color: #e0e0e0; */
-}
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+PE:wght@100..400&display=swap');
 .thought-container {
     display: flex;
     align-items: center;
@@ -14,11 +12,14 @@
   }
   
   .thought-text {
+    width: 60rem;
     font-size: 1.5rem;
     text-align: center;
     color: #555;
     font-style: italic;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Playwrite PE", cursive;
+    font-optical-sizing: auto;
+    font-weight: 450;
   }
   
   .quote-icon {
@@ -31,10 +32,12 @@
   
   .left {
     left: -60px;
+    margin-bottom: 3em;
   }
   
   .right {
     right: -60px;
+    margin-top: 3em;
   }
   
   .thought-container.animate .quote-icon {

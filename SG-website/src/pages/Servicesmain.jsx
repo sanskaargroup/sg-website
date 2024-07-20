@@ -11,7 +11,7 @@ const Servicesmain = () => {
         <h1>Services</h1>
       </div>
       <div className="line"></div>
-      <div className="text">
+      <div className="text-service">
         <h1>Our Team Believes “ WOW AT EVERY MOMENT OF TRUTH”</h1>
         <div className="line"></div>
           <p>Sanskaar has a fully capable and self-sufficient, dedicated team for creating dream weddings. We offer customized holistic solutions creating unparallel experiences. Our weddings reflect our client’s lifestyle and personalities creating unforgettable moments and lifelong memories.

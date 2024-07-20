@@ -9,7 +9,7 @@ import P5 from "../image/P5.jpg"
 const About = () => {
   return (
     <div>
-        <div className="intro">
+        <div className="intro" >
             <div className="text">
                 <h2>ABOUT SANSKAAR GROUP</h2>
                 <br />

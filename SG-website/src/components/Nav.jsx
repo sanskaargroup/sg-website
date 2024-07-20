@@ -6,8 +6,6 @@ import{Link} from "react-router-dom"
 import '../components/Nav.css';
 const Nav = () => {
   const sidebarRef = useRef();
-  
-
   const showSidebar = () => {
     sidebarRef.current.style.display = 'flex';  
   };
@@ -31,7 +29,8 @@ const Nav = () => {
           <li><Link to="/Blog">Blog</Link></li>
           <li className="contact"><Link to="/ContactUs">Contact Us</Link></li>
         </ul>
-        <button className="nav-btn menubutton" onClick={showSidebar}>
+        <div className="problem">
+      <button className="nav-btn menubutton" onClick={showSidebar}>
           <FaBarsStaggered />
         </button>
         <ul className="sidebar" ref={sidebarRef}>
@@ -46,6 +45,8 @@ const Nav = () => {
             <li className="contact"><Link to="/ContactUs">Contact Us</Link></li>
           </ul>
       </div>
+      </div>
+      
       
     </nav>
   );

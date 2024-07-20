@@ -1,13 +1,18 @@
 import { FaChevronDown } from "react-icons/fa";
 import BackgroundImage from '../image/T5.jpg'; 
-import BackgroundImage1 from '../image/K1.jpg'; 
+import BackgroundImage1 from '../image/animate.gif'; 
+import team1 from '../image/logo/team1.png'; 
 import "./Team.css"
 import D1 from "../image/D1.jpg"
+import { LuInstagram } from "react-icons/lu";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaFacebook } from "react-icons/fa";
 const teamMembers = [
     {
       name: 'Vikram Chopra',
       title: 'HOSPITALITY CONSULTANT',
-      image: D1,
+      image: team1,
       social: {
         facebook: '#',
         linkedin: '#',
@@ -15,17 +20,6 @@ const teamMembers = [
         twitter: '#'
       }
     },
-    // {
-    //   name: 'Dalip Kumar Chopra',
-    //   title: 'HOSPITALITY CONSULTANT',
-    //   image: 'path/to/dalip.jpg',
-    //   social: {
-    //     facebook: '#',
-    //     linkedin: '#',
-    //     skype: '#',
-    //     twitter: '#'
-    //   }
-    // },
     {
       name: 'Shivam Rai',
       title: 'HEAD BUSINESS DEVELOPMENT',
@@ -44,13 +38,12 @@ const teamMembers = [
       social: {
         facebook: '#',
         linkedin: '#',
-        skype: '#',
+        instagram: '#',
         twitter: '#'
       }
     }
   ];
 const Team = () => {
-    
   return (
     <div className="mem" >
         <div className="intro" style={{ backgroundImage: `url(${BackgroundImage})`}}>
@@ -62,8 +55,8 @@ const Team = () => {
             <div className="icon">
                 <FaChevronDown />
             </div>  
-    </div>
-    <div className="team-container" >
+        </div>
+    <div className="team-container" style={{ backgroundImage: `url(${BackgroundImage1})`}} >
       {teamMembers.map((member, index) => (
         <div className="team-member" key={index}>
           <img src={member.image} alt={member.name} />
@@ -71,10 +64,10 @@ const Team = () => {
           <p>{member.title}</p>
           
           <div className="social-icons">
-            <a href={member.social.facebook} target="_blank" rel="noopener noreferrer">F</a>
-            <a href={member.social.linkedin} target="_blank" rel="noopener noreferrer">L</a>
-            <a href={member.social.skype} target="_blank" rel="noopener noreferrer">S</a>
-            <a href={member.social.twitter} target="_blank" rel="noopener noreferrer">T</a>
+            <a href={member.social.instagram} target="_blank" rel="noopener noreferrer"><LuInstagram /></a>
+            <a href={member.social.linkedin} target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+            <a href={member.social.twitter} target="_blank" rel="noopener noreferrer"><FaSquareXTwitter /></a>
+            <a href={member.social.facebook} target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
           </div>
           <button className="profile">View Profile</button>
         </div>

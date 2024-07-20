@@ -1,10 +1,12 @@
 import BackgroundImage from "../image/s7.jpg"; 
+import BackgroundImage1 from "../image/animate.gif"; 
 import year0 from "../image/K1.jpg"; 
+
 
 import "./Corporateeventmain.css"
 const Corporateeventmain = () => {
   return (
-    <div>
+    <div className="ceall" style={{ backgroundImage: `url(${BackgroundImage1})` }}>
       <div className="corporate-event">
         <div className="head" style={{ backgroundImage: `url(${BackgroundImage})` }}>
             <h1>Corporate Event</h1>
@@ -14,7 +16,7 @@ const Corporateeventmain = () => {
         <h2>Corporate Events to our Credit pertaining to Co Organizing the Event:</h2>
         </div>
     <div className="year-wise">
-      <div className="year0">
+      <div className="year0 , eventcard">
         <div className="year-intro">
           <div className="line-intro"></div>
           <h3>2016-2017</h3>
@@ -41,7 +43,7 @@ const Corporateeventmain = () => {
                </ul>
               </div>
       </div>
-      <div className="year1">
+      <div className="year1 , eventcard">
           <div className="year-intro">
           <div className="line-intro"></div>
           <h3>2017-2018</h3>
@@ -64,7 +66,7 @@ const Corporateeventmain = () => {
                </ul>
               </div>
     </div>
-    <div className="year2">
+    <div className="year2 , eventcard">
       <div className="year-intro">
           <div className="line-intro"></div>
           <h3>2018-2019</h3>
@@ -89,11 +91,7 @@ const Corporateeventmain = () => {
                </ul>
               </div>
     </div>
-    <div className="year3">
-              {/* <h2>2023-2024</h2>
-              <ul>
-                
-              </ul> */}
+    <div className="year3 , eventcard">
               <div className="year-intro">
           <div className="line-intro"></div>
           <h3>2023-2024</h3>
@@ -123,6 +121,12 @@ const Corporateeventmain = () => {
                 <img src="" alt="" /><img src="" alt="" /><img src="" alt="" />
                 <img src="" alt="" /><img src="" alt="" />
             </div>
+            <button>
+              <span className="shadow"></span>
+              <span className="edge"></span>
+              <span className="front text"> See more
+              </span>
+            </button>
         </div>
     </div>
       </div>

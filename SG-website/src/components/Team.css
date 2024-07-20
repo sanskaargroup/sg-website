@@ -1,19 +1,22 @@
 .intro {
     position: relative;
     text-align: center;
-    padding: 40px 20px;
   }
-  
+  .mem{
+    margin-top: -4.5rem;
+  }
   .intro .text {
     margin: 0 auto;
     animation: fadeIn 1s ease-in-out;
     
   }
+  .text h2{
+    color: #218838;
+  }
   
   .intro h2 {
     margin: 0;
     font-size: 36px;
-    color: rgb(126, 126, 126);
   }
   
   .intro h4 {

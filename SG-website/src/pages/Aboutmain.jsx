@@ -1,7 +1,7 @@
 
 import '../pages/Aboutmain.css';
 import photo from '../image/logosg.png'
-import img from '../image/s1.jpg'
+import img from '../image/athiti.png'
 import { FaChevronDown } from "react-icons/fa";
 
 const AboutMain = () => {

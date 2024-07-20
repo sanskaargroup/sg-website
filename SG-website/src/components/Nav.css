@@ -65,26 +65,23 @@
 }
 
 .nav-list li.contact a {
-  background-color: #a2c306;
+  background-color: #80AF81;
   border-radius: 1em;
   color: #fff;
   padding: 5px 10px;
   transition: background-color 0.3s, transform 0.3s;
 }
-.active{
-  color: #a2c306;
-}
-
 .nav-list li.contact a:hover {
   border: #000000;
 }
-
-.nav-btn{
+.problem{
   display: none;
 }
 
-
 @media (max-width: 900px) {
+  .problem{
+    display: contents;
+  }
   .menubutton{
     display: contents;
   }
@@ -125,12 +122,12 @@
 .sidebar li a:hover,
 .sidebar li.active a {
   color: #000000; 
-  background-color: #a2c306;
-  border-radius: 4px;
+  background-color: #80AF81;
+  border-radius: 8em;
 }
 
 .sidebar li.contact a {
-  background-color: #a2c306;
+  background-color: #80AF81;
   border-radius: 1em;
   color: #fff;
   padding: 5px 10px;

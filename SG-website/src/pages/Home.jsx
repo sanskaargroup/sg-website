@@ -13,12 +13,17 @@ import Touch from "../components/Touch"
 import Thought from "../components/Thought"
 import ContactForm from "../components/ContactForm"
 import Team from "../components/Team"
+import Stats from "../components/Stats"
+import Company from "../components/Company"
 
 export default function App() {
   return (
     <div>
       <div>
         <Header/>
+      </div>
+      <div>
+        <Stats/>
       </div>
       <div>
         <Services />
@@ -49,6 +54,9 @@ export default function App() {
       </div>
       <div>
         <Team />
+      </div>
+      <div>
+        <Company />
       </div>
     </div>
   )

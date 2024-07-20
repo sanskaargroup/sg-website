@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
 .ce-intro{
     display: flex;
     justify-content: center;
-    
+    font-family: "Cinzel";
+    margin-bottom: 3rem;
 }
 .year-wise img{
     width: 350px;
@@ -12,6 +15,7 @@
     justify-content: center;
     gap: 9rem;
     margin-bottom: 4rem;
+    font-size: 1.1rem;
 }
 .year-intro{
     display: flex;
@@ -19,9 +23,162 @@
     justify-content: center;
 }
 .line-intro{
-    width: 30rem;
+    width: 20rem;
     height: 0.1rem;
     background-color: black;
     margin: 4rem;
     border-radius: 50rem;
 }
+.year0,.year1,.year2,.year3{
+    
+    margin-left: 6rem;
+    margin-right: 6rem;
+    margin-bottom: 3rem;
+    
+}
+.eventcard{
+  display: block;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 10px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.eventcard:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: rgb(156,219,166);
+    background: radial-gradient(circle, rgba(156,219,166,1) 0%, rgba(80,180,152,1) 100%);
+    height: 32px;
+    width: 32px;
+    border-radius: 82px;
+    transform: scale(0);
+    transform-origin: 50% 50%;
+    transition: transform 1s ease-out;
+  }
+  
+  .eventcard:hover:before {
+    transform: scale(88);
+  }
+  
+  .eventcard:hover .year0-content {
+    transition: all 0.5s ease-out;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .eventcard:hover h3{
+    transition: all 0.5s ease-out;
+    color: #ffffff;
+  }
+.gallery h3{
+  text-align: center;
+  font-size: 2rem;
+  margin: 4rem;
+  font-family: "Cinzel";
+}
+
+.event-images{
+ width: 100%;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+}
+.event-images img{
+  margin: 1em;
+}
+.gallery button {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  touch-action: manipulation;
+  margin-left: 45%;
+  margin-bottom: 2rem;
+ }
+ 
+ .shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition: transform
+     600ms
+     cubic-bezier(.3, .7, .4, 1);
+ }
+ 
+ .edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+     to left,
+     #1A5319 0%,
+     #287f27(340deg 100% 32%) 8%,
+     #37ad35(340deg 100% 32%) 92%
+   );
+ }
+ 
+ .front {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: white;
+  background: #80AF81;
+  will-change: transform;
+  transform: translateY(-4px);
+  transition: transform
+     600ms
+     cubic-bezier(.3, .7, .4, 1);
+ }
+ 
+ .gallery button:hover {
+  filter: brightness(110%);
+ }
+ 
+ .gallery button:hover .front {
+  transform: translateY(-6px);
+  transition: transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+ }
+ 
+ .gallery button:active .front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+ }
+ 
+ .gallery button:hover .shadow {
+  transform: translateY(4px);
+  transition: transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+ }
+ 
+ .gallery button:active .shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+ }
+ 
+ .gallery button:focus:not(:focus-visible) {
+  outline: none;
+ }

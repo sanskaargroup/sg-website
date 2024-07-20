@@ -1,101 +1,12 @@
-/* .services {
-    text-align: center;
-    padding: 50px 20px;
-  }
-  
-  .services-header h2 {
-    font-size: 24px;
-    margin-bottom: 30px;
-    color: #555;
-  }
-  
-  .services-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .services-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    max-width: 600px;
-  }
-  
-  .service-item {
-    flex: 1 1 calc(50% - 20px);
-    padding: 20px;
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;
-    text-align: left;
-  }
-  
-  .service-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  }
-  
-  .icon {
-    font-size: 24px;
-    color: #8cc63f;
-    margin-bottom: 10px;
-  }
-  
-  .text {
-    font-size: 18px;
-    font-weight: bold;
-    color: #555;
-  }
-  
-  .services-image {
-    flex: 0 0 auto;
-    width: 335px;
-    height: 426px;
-    margin-left: 40px;
-
-  } */
-  
-  /* .services-image img {
-    width: 200px;
-  }
-   */
-  /* @media (max-width: 768px) {
-    .services-container {
-      flex-direction: column;
-    }
-  
-    .services-image {
-      margin-left: 0;
-      margin-top: 20px;
-    }
-  
-    .services-image img {
-      width: 150px;
-    }
-  } */
-  
-  /* @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-   */
+   @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
   .services{
     background-color: #f1f1f17e;
-    height: 370px;
+    height: 35rem;
 
   }
    .card1 {
-    width: 190px;
-    height: 120px;
+    width: 13rem;
+    height: 17rem;
     padding: 0.5rem;
     background: rgba(198, 198, 198, 0.34);
     border-radius: 8px;
@@ -103,14 +14,13 @@
     border-bottom: 3px solid rgba(255, 255, 255, 0.440);
     border-left: 2px  rgba(255, 255, 255, 0.545) outset;
     box-shadow: -40px 50px 30px rgba(0, 0, 0, 0.280);
-    transform: skewX(10deg);
     transition: .4s;
     overflow: hidden;
-    color: white;
+    background: radial-gradient(circle, rgba(214,239,216,1) 0%, rgba(128,175,129,1) 100%);;
   }
    .card2 {
-    width: 190px;
-    height: 120px;
+    width: 13rem;
+    height: 17rem;
     padding: 0.5rem;
     background: rgba(198, 198, 198, 0.34);
     border-radius: 8px;
@@ -120,11 +30,11 @@
     box-shadow: 0px 50px 30px rgba(0, 0, 0, 0.280);
     transition: .4s;
     overflow: hidden;
-    color: white;
+    background: radial-gradient(circle, rgba(214,239,216,1) 0%, rgba(128,175,129,1) 100%);;
   }
    .card3 {
-    width: 190px;
-    height: 120px;
+    width: 13rem;
+    height: 17rem;
     padding: 0.5rem;
     background: rgba(198, 198, 198, 0.34);
     border-radius: 8px;
@@ -132,28 +42,16 @@
     border-bottom: 3px solid rgba(255, 255, 255, 0.440);
     border-left: 2px  rgba(255, 255, 255, 0.545) outset;
     box-shadow: 40px 50px 30px rgba(0, 0, 0, 0.280);
-    transform: skewX(-10deg);
     transition: .4s;
     overflow: hidden;
-    color: white;
+    background: radial-gradient(circle, rgba(214,239,216,1) 0%, rgba(128,175,129,1) 100%);;
   }
   .allcards{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10rem; 
-  }
-  .card1:hover {
-    height: 254px;
-    transform: skew(0deg);
-  }
-  .card2:hover {
-    height: 254px;
-    transform: skew(0deg);
-  }
-  .card3:hover {
-    height: 254px;
-    transform: skew(0deg);
+    margin-top: 9rem;
   }
   
   .align {
@@ -174,38 +72,17 @@
    text-align: center;
   }
   
-  .red {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #00ca4d47;
-    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
-  }
-  
-  .yellow {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #00ca4d7e;
-    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
-  }
-  
-  .green {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #00ca4e;
-    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
-  }
-  .services-heading{
+
+  .services-heading {
     text-align: center;
-    margin: 4rem 4rem;
-    
+    margin: 6rem 4rem;
   }
   .services-heading h3{
-    font-size: 3rem;
-    font-weight: 600;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
     
   }
   .card1 h1 {
@@ -224,4 +101,85 @@
     color: rgb(75, 75, 75);
   }
   
+  .book {
+    position: relative;
+    border-radius: 10px;
+    width: 220px;
+    height: 300px;
+    background-color: #D6EFD8;
+    -webkit-transform: preserve-3d;
+    -ms-transform: preserve-3d;
+    transform: preserve-3d;
+    -webkit-perspective: 2000px;
+    perspective: 2000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #000;
+  }
+  .book li{
+    text-align: start;
+    line-height: 2;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 2em;
+    cursor: pointer;
+  }
+  .card1,.card2,.card3{
+    top: 0;
+    position: absolute;
+    background-color: lightgray;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform-origin: 0;
+    -ms-transform-origin: 0;
+    transform-origin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
   
+  .book:hover .card1 {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform: rotatey(-95deg);
+    -ms-transform: rotatey(-95deg);
+    transform: rotatey(-95deg);
+  }
+  .book:hover .card2 {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform: rotatey(-95deg);
+    -ms-transform: rotatey(-95deg);
+    transform: rotatey(-95deg);
+  }
+  .book:hover .card3 {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform: rotatey(-95deg);
+    -ms-transform: rotatey(-95deg);
+    transform: rotatey(-95deg);
+  }
+  
+  /* p {
+    font-size: 20px;
+    font-weight: bolder;
+  } */
