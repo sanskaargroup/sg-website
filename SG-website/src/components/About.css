@@ -181,3 +181,56 @@
     animation: fadeInUp 0.5s ease-in-out;
   }
   
+  @media (max-width: 576px) {
+    .intro {
+      padding: 20px 10px;
+    }
+  
+    .intro h2 {
+      font-size: 24px;
+    }
+  
+    .intro h4 {
+      font-size: 14px;
+      letter-spacing: 0.5em;
+    }
+  
+    .intro .icon {
+      font-size: 18px;
+    }
+  
+    .info-text {
+      font-size: 16px;
+      padding-top: 20px;
+    }
+  
+    .info img {
+      height: 100px;
+      width: 150px;
+    }
+  
+    .main {
+      flex-direction: column;
+      padding: 15px 20px 40px 20px;
+    }
+  
+    .div1, .div2, .div3 {
+      padding: 10px 0;
+    }
+  
+    .div2 img {
+      display: none;
+    }
+  
+    .content1, .content2, .content3, .content4 {
+      padding-top: 20px;
+    }
+  
+    .main h3 {
+      font-size: 18px;
+    }
+  
+    p {
+      font-size: 14px;
+    }
+  }

@@ -10,3 +10,18 @@
 .para{
     margin-left: 24rem;
 }
+
+@media (max-width: 576px) {
+    .image img{
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-top: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .para {
+        margin-left: 1rem; /* Adjust margin for better readability */
+        margin-right: 1rem; /* Add right margin for better spacing */
+    }
+}

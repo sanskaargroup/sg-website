@@ -39,21 +39,21 @@
     background-color: #ffffff;
   }
   
-  /* button {
+  button {
     display: inline-block;
     margin-bottom: 20px;
     padding: 10px 20px;
-    background-color: #55b236;
+    background-color: #508D4E;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  } */
+  }
   
-  /* button:hover {
+  button:hover {
     background-color: #3a7a25;
   }
-   */
+  
   .pagination {
     display: flex;
     justify-content: center;
@@ -74,3 +74,69 @@
     cursor: not-allowed;
   }
   
+  @media (max-width: 576px) {
+    .blog-page {
+        padding: 15px;
+    }
+    
+    .blog-list {
+        gap: 10px;
+    }
+    
+    .blog-card {
+        display: block;
+        cursor: pointer;
+        border: 1px solid #cfcfcf;
+        padding: 10px;
+        border-radius: 5px;
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+    }
+    
+    .blog-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 3px;
+    }
+
+    .full-blog img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+
+    button {
+        display: inline-block;
+        margin-bottom: 15px;
+        padding: 8px 16px;
+        background-color: #508D4E;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #3a7a25;
+    }
+
+    .pagination {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .pagination button {
+        margin: 0 3px;
+        padding: 8px 16px;
+        border: none;
+        background-color: #55b236;
+        color: white;
+        cursor: pointer;
+    }
+}

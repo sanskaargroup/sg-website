@@ -71,3 +71,27 @@
     margin: 5px 0;
   }
   
+  @media (max-width: 576px) {
+    .enquiry-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+        margin: 1rem;
+        padding: 10px;
+    }
+
+    .enquiry-form,
+    .contact-info {
+        width: 100%;
+    }
+
+    .enquiry-form h2,
+    .contact-info h3 {
+        font-size: 20px;
+    }
+
+    .submit-button {
+        width: 100%;
+        padding: 15px;
+    }
+}

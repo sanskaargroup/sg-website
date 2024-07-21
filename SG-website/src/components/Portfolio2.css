@@ -68,3 +68,32 @@
     transform: translate(-50%, -50%);
   }
   
+@media (max-width: 576px) {
+  .portfolio-container {
+    padding: 10px;
+  }
+
+  .animated-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .animated-button:hover {
+    scale: 1.05;
+  }
+
+  .animated-button:before,
+  .animated-button:after {
+    width: 200%;
+    height: 200%;
+  }
+
+  .animated-button:hover:before {
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+
+  .animated-button:hover:after {
+    width: 150%;
+    height: 150%;
+  }
+}

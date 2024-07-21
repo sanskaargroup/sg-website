@@ -52,3 +52,53 @@
     transform: translateX(-50px);
   }
   
+  @media (max-width: 768px) {
+    .thought-container {
+        height: auto;
+        width: 90vw;
+        padding: 15px;
+    }
+
+    .thought-text {
+        width: 90vw;
+        font-size: 1.2rem;
+    }
+
+    .quote-icon {
+        font-size: 1.5rem;
+    }
+
+    .left {
+        left: -30px;
+    }
+
+    .right {
+        right: -30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .thought-container {
+        padding: 2px;
+        width: 95vw;
+    }
+
+    .thought-text {
+        width: 50vw;
+        font-size: 0.8rem;
+        text-align: justify;
+    }
+
+    .quote-icon {
+        font-size: 1.2rem;
+    }
+
+    .left {
+        left: -20px;
+        top: -10px;
+    }
+    .right {
+        right: -20px;
+        top: 80px;
+    }
+}

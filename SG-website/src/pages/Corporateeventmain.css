@@ -182,3 +182,62 @@
  .gallery button:focus:not(:focus-visible) {
   outline: none;
  }
+
+
+ @media (max-width: 576px) {
+  .ce-intro {
+      flex-direction: column;
+      margin-bottom: 2rem;
+      text-align: center;
+  }
+
+  .year-wise img {
+      width: 100%;
+      height: auto;
+  }
+
+  .year0-content {
+      flex-direction: column;
+      gap: 2rem;
+      margin-bottom: 2rem;
+      font-size: 0.9rem;
+  }
+
+  .line-intro {
+      width: 15rem;
+      height: 0.1rem;
+      margin: 2rem;
+  }
+  .year-intro h3{
+    font-size: 1rem;
+  }
+  .year-intro{
+    width: 100%;
+  }
+
+  .year0, .year1, .year2, .year3 {
+      margin-left: 2rem;
+      margin-right: 2rem;
+      margin-bottom: 2rem;
+  }
+
+  .eventcard {
+      padding: 10px;
+  }
+
+  .gallery h3 {
+      font-size: 1.5rem;
+      margin: 2rem;
+  }
+
+  .event-images img {
+      margin: 0.5em;
+  }
+
+  .gallery button {
+      margin-left: 30%;
+      margin-bottom: 2rem;
+      width: 8.8rem;
+      height: 2rem;
+  } 
+}

@@ -2,10 +2,8 @@
 .stats-container {
     display: flex;
     justify-content: space-around;
-    /* background:linear-gradient(135deg,  #c3e390 4%,#e6f7cb 54%,#d9fc97 74%); */
     padding: 20px 0;
-    margin-top: 4.3rem;
-    
+    margin-top: 10.3rem;  
   }
   
   .stat-item {
@@ -29,4 +27,22 @@
     font-weight: 600;
     font-style: normal;
   }
+  @media (max-width: 576px) {
+    .stats-container {
+      flex-direction: row;
+      align-items: center;
+      padding: 10px 0;
+    }
   
+    .stat-item {
+      margin-top: 25rem;
+    }
+  
+    .stat-number {
+      font-size: 2em;
+    }
+  
+    .stat-label {
+      font-size: 0.6em;
+    }
+  }

@@ -41,3 +41,24 @@
     color: rgb(255, 255, 255);
   }
   
+  @media (max-width: 576px) {
+    .tagline-container {
+      height: 30vh;
+      
+    }
+  
+    .enjoy h1 {
+      font-size: 1.5rem;
+      text-align: center;
+
+    }
+    .enjoy{
+      width: 95%;
+      
+    }
+    .enjoy p {
+      font-size: 0.8rem;
+      width: 80%;
+      text-align: center;
+    }
+  }

@@ -21,3 +21,29 @@
     margin-top: 3px;
     margin-right: 10px;
 }
+
+@media (max-width: 576px) {
+    .logos-slide img {
+      height: 150px;
+      width: 150px;
+      margin: 0 20px;
+    }
+  
+    .logos {
+      padding: 30px 0;
+    }
+  
+    .header-container h2 {
+      font-size: 1.5rem;
+      margin-right: 5px;
+    }
+  
+    .underline {
+      width: 100px;
+      margin-right: 5px;
+    }
+  
+    .Portfolio1 {
+      padding-top: 15px;
+    }
+  }

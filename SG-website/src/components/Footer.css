@@ -118,3 +118,35 @@
 .foot-us{
   margin-top: 3rem;
 }
+
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      padding: 3rem;
+      gap: 3rem;
+  }
+
+  .footer-about,
+  .footer-recent-post,
+  .footer-navi {
+      width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+      padding: 2rem;
+      gap: 2rem;
+  }
+
+  .footer-about,
+  .footer-recent-post,
+  .footer-navi {
+      width: 100%;
+  }
+
+  .footer-recent-post ul,
+  .footer-navi ul {
+      margin-top: 2rem;
+  }
+}

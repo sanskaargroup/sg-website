@@ -237,3 +237,89 @@
 }
 
   
+@media (max-width: 576px) {
+  .intro {
+      padding: 20px 10px;
+  }
+
+  .intro h2 {
+      font-size: 28px;
+  }
+
+  .intro h4 {
+      font-size: 16px;
+  }
+
+  .intro .icon {
+      font-size: 20px;
+      bottom: -40px;
+  }
+
+  .text1 {
+      font-size: 18px;
+      width: 90%;
+  }
+  .text1 h2 {
+    font-size: 18px;
+    
+}
+
+  .text1 p {
+      font-size: 15px;
+  }
+
+  .about-us-container {
+      padding: 10px;
+  }
+
+  .about-us-wrapper {
+      width: 100%;
+      padding: 1rem;
+  }
+
+  .about-us-title {
+      font-size: 18px;
+  }
+
+  .about-us-left,
+  .about-us-right {
+      width: 100%;
+      text-align: center;
+  }
+
+  .about-us-image {
+      max-width: 100%;
+  }
+
+  .ethos {
+      width: 100%;
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .ethos img {
+      width: 100%;
+      height: auto;
+  }
+
+  .about-us-right {
+      font-size: 14px;
+  }
+
+  .aboutus-header h1 {
+      font-size: 20px;
+      margin-top: 200px;
+  }
+
+  .aboutus-description {
+      font-size: 16px;
+  }
+
+  .aboutus-card h2 {
+      font-size: 20px;
+  }
+
+  .aboutus-card p {
+      font-size: 14px;
+  }
+}

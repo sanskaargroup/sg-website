@@ -48,3 +48,58 @@
     transform: scale(1.05);
   }
   
+  @media (max-width: 768px) {
+    .touch-container {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .touch-box {
+        width: 80%;
+        padding: 15px 30px;
+        margin: 10px 0;
+    }
+
+    .touch-box h2 {
+        font-size: 1.2rem;
+    }
+
+    .touch-box p {
+        font-size: 0.9rem;
+    }
+
+    .touch-button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .touch-container {
+        flex-direction: row;
+        padding: 2rem 1rem 2rem 1rem;
+        gap: 0.4rem;
+    }
+
+    .touch-box {
+        width: 12rem;
+        padding: 20px 20px;
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .touch-box h2 {
+        font-size: 1rem;
+    }
+
+    .touch-box p {
+        font-size: 0.8rem;
+        text-align: justify;
+    }
+
+    .touch-button {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+}

@@ -35,4 +35,24 @@
     transition: transform 0.6s ease-out !important;
   }
   
-  
+  @media (max-width: 768px) {
+    .logo-slide {
+        margin-left: 2em;
+    }
+
+    .logo-slide img {
+        width: 6em;
+        height: 6em;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-slide {
+        margin-left: 1em;
+    }
+
+    .logo-slide img {
+        width: 4em;
+        height: 4em;
+    }
+}
