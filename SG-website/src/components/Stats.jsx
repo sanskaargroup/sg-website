@@ -1,6 +1,6 @@
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
-import './Stats.css'; // Ensure you create a corresponding CSS file for styling
+import './Stats.css';
 
 const Stats = () => {
   const { ref, inView } = useInView({
