@@ -4,6 +4,15 @@ import year0 from "../image/event.jpg";
 import year1 from "../image/header1.jpg"; 
 import year2 from "../image/event1.jpg"; 
 import year3 from "../image/event2.jpg"; 
+import image1 from "../image/image1.jpg"; 
+import image2 from "../image/image2.jpg"; 
+import image3 from "../image/image3.jpg"; 
+import image4 from "../image/image4.jpg"; 
+import image5 from "../image/image5.jpg"; 
+import image6 from "../image/image6.jpg"; 
+import image7 from "../image/image7.jpg"; 
+import image8 from "../image/image8.jpg"; 
+
 
 
 import "./Corporateeventmain.css"
@@ -120,9 +129,9 @@ const Corporateeventmain = () => {
     <div className="gallery">
             <h3>Glimpse of events</h3>
             <div className="event-images">
-                <img src= "" alt="" /><img src="" alt="" /><img src="" alt="" />
-                <img src="" alt="" /><img src="" alt="" /><img src="" alt="" />
-                <img src="" alt="" /><img src="" alt="" />
+                <img src={image1} alt="" /><img src={image4} alt="" /><img src={image7} alt="" />
+                <img src={image2} alt="" /><img src={image5} alt="" /><img src={image8} alt="" />
+                <img src={image3} alt="" /><img src={image6} alt="" />
             </div>
             <button>
               <span className="shadow"></span>
