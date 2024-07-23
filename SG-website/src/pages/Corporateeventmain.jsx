@@ -1,6 +1,9 @@
 import BackgroundImage from "../image/s7.jpg"; 
 import BackgroundImage1 from "../image/animate.gif"; 
-import year0 from "../image/K1.jpg"; 
+import year0 from "../image/event.jpg"; 
+import year1 from "../image/header1.jpg"; 
+import year2 from "../image/event1.jpg"; 
+import year3 from "../image/event2.jpg"; 
 
 
 import "./Corporateeventmain.css"
@@ -50,7 +53,7 @@ const Corporateeventmain = () => {
           <div className="line-intro"></div>
         </div>
               <div className="year0-content">
-                <img src={year0} alt="" />
+                <img src={year1} alt="" />
                 <ul>
                   <li>India – Kyrgyz Health Co – Operation Programme 2017Bishkek, Kyrgyzstan</li>
                   <li>Medex 2017Yangon, Myanmar</li>
@@ -73,7 +76,7 @@ const Corporateeventmain = () => {
           <div className="line-intro"></div>
         </div>
               <div className="year0-content">
-                <img src={year0} alt="" />
+                <img src={year2} alt="" />
                 <ul>
                   <li>Hestourex 2019Antalya, Turkey</li>
                   <li>Namaskar Africa 2019Kenya and Tanzania</li>
@@ -98,7 +101,7 @@ const Corporateeventmain = () => {
           <div className="line-intro"></div>
         </div>
               <div className="year0-content">
-                <img src={year0} alt="" />
+                <img src={year3} alt="" />
                 <ul>
                   <li>Manthan (at Bangalore) 2023</li>
                   <li>Higher Education Submit 2023</li>

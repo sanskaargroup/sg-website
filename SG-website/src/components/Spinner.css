@@ -1,5 +1,8 @@
 .boxes {
-    --size: 32px;
+  margin-top: 50%;
+  margin-left: 50%;
+  
+  --size: 49px;
     --duration: 800ms;
     height: calc(var(--size) * 2);
     width: calc(var(--size) * 3);
@@ -8,6 +11,7 @@
     transform-origin: 50% 50%;
     margin-top: calc(var(--size) * 1.5 * -1);
     transform: rotateX(60deg) rotateZ(45deg) rotateY(0deg) translateZ(0px);
+    z-index: 999;
   }
   
   .boxes .box {
@@ -15,6 +19,8 @@
     height: var(--size);
     top: 0;
     left: 0;
+    margin-top: 40rem;
+    margin-left: 35rem;
     position: absolute;
     transform-style: preserve-3d;
   }
@@ -44,7 +50,7 @@
   }
   
   .boxes .box > div {
-    --background: #76d459;
+    --background: #1A5319;
     --top: auto;
     --right: auto;
     --bottom: auto;
@@ -69,13 +75,13 @@
   }
   
   .boxes .box > div:nth-child(2) {
-    --background: #76d459;
+    --background: #508D4E;
     --right: 0;
     --rotateY: 90deg;
   }
   
   .boxes .box > div:nth-child(3) {
-    --background: #76d459;
+    --background: #508D4E;
     --rotateX: -90deg;
   }
   
