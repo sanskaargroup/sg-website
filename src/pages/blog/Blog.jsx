@@ -1,9 +1,9 @@
-import BlogTemplate from './blogtemplate';
+import BlogTemplate from "./Blogtemplate"
 import './blogtemplate.css';
-import './Blogmain.css';
-import BackgroundImage from "../image/s7.jpg"
+import './Blog.css';
+import BackgroundImage from "../../image/s7.jpg"
 
-const Blogmain = () => {
+const Blog = () => {
   return (
     <div>
       <div className="head" style={{ backgroundImage: `url(${BackgroundImage})`}}>
@@ -17,4 +17,4 @@ const Blogmain = () => {
   );
 };
 
-export default Blogmain;
+export default Blog;

@@ -3,16 +3,19 @@ import { useState, useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import "./components/Header.css";
 import "./components/Nav.css";
+
+
 import Nav from "./components/Nav"
 import Footer from "./components/Footer"
-import Home from "./pages/Home"
-import Aboutusmain from "./pages/Aboutmain"
-import Servicesmain from "./pages/Servicesmain"
-import Socialevent from "./pages/Socialeventmain"
-import Corporateevent from "./pages/Corporateeventmain"
-import Testimonialmain from "./pages/Testimonialmain"
-import Blogmain from "./pages/Blogmain"
-import Contactusmain from "./pages/Contactusmain"
+
+import Home from "./pages/home/Home";
+import About from "./pages/about/About";
+import Services from "./pages/services/Services";
+import SocialEvents from "./pages/social-events/Socialevent";
+import CorporateEvents from "./pages/corporate-events/CorporateEvents";
+import Testimonials from "./pages/testimonials/Testimonials";
+import Blog from "./pages/blog/Blog";
+import Contact from "./pages/contact-us/Contact";
 import Spinner from "./components/Spinner";
 
 export default function App() {
@@ -35,13 +38,13 @@ export default function App() {
         <Nav/>
         <Routes>
           <Route path="/" element = {<Home/>}/>
-          <Route path="/AboutUs" element = {<Aboutusmain/>}/>
-          <Route path="/Services" element = {<Servicesmain/>}/>
-          <Route path="/SocialEvents" element = {<Socialevent/>}/>
-          <Route path="/CorporateEvents" element = {<Corporateevent/>}/>
-          <Route path="/Testimonial" element = {<Testimonialmain/>}/>
-          <Route path="/Blog" element = {<Blogmain/>}/>
-          <Route path="/ContactUs" element = {<Contactusmain/>}/>
+          <Route path="/AboutUs" element = {<About/>}/>
+          <Route path="/Services" element = {<Services/>}/>
+          <Route path="/SocialEvents" element = {<SocialEvents/>}/>
+          <Route path="/CorporateEvents" element = {<CorporateEvents/>}/>
+          <Route path="/Testimonial" element = {<Testimonials/>}/>
+          <Route path="/Blog" element = {<Blog/>}/>
+          <Route path="/ContactUs" element = {<Contact/>}/>
         </Routes>
         <div>
         <Footer />

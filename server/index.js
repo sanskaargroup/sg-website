@@ -17,15 +17,15 @@ app.post("/", async (req, res) => {
 	try {
 		console.log("req.body: ", req.body);
 		if (!req.body) {
-			return res.status(404).json({message: "no form data found"});
+			return res.status(404).json({message: "No form data found"});
 		}
 		const newEnquiry = new Enquiry({...req.body, timestamp: Date.now()});
 		await newEnquiry.save();
 		console.log("newEnquiry created: ", newEnquiry);
-		res.status(200).json({message: "all ok"});
+		res.status(200).json({message: "Query sent successfully"});
 	} catch (e) {
 		console.log("error in finding req: ", e);
-		res.status(400).json({message: "unable to print req"});
+		res.status(500).json({message: "Internal server error, please try again"});
 	}
 });
 

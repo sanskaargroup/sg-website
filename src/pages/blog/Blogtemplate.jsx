@@ -1,6 +1,6 @@
 // src/components/BlogTemplate.jsx
 import  { useState } from 'react';
-import blogData from './blogdata';
+import blogdata from '../../utils/blogdata'
 import "./blogtemplate.css"
 
 const BlogTemplate = () => {
@@ -8,7 +8,7 @@ const BlogTemplate = () => {
   const [selectedBlog, setSelectedBlog] = useState(null);
 
   const blogsPerPage = 8;
-  const totalPages = Math.ceil(blogData.length / blogsPerPage);
+  const totalPages = Math.ceil(blogdata.length / blogsPerPage);
 
   const handleBlogClick = (blog) => {
     setSelectedBlog(blog);
@@ -21,7 +21,7 @@ const BlogTemplate = () => {
 
   const renderBlogCards = () => {
     const startIndex = (currentPage - 1) * blogsPerPage;
-    const currentBlogs = blogData.slice(startIndex, startIndex + blogsPerPage);
+    const currentBlogs = blogdata.slice(startIndex, startIndex + blogsPerPage);
 
     return currentBlogs.map((blog) => (
       <div key={blog.id} className="blog-card" onClick={() => handleBlogClick(blog)}>

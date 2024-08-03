@@ -1,10 +1,10 @@
-import "./Servicesmain.css"
-import BackgroundImage from "../image/s7.jpg"
-import eventImage1 from "../image/ser1.jpg"
-import eventImage2 from "../image/ser2.jpg"
-import eventImage3 from "../image/ser3.jpg"
-import eventImage4 from "../image/ser4.jpeg"
-const Servicesmain = () => {
+import "./Services.css"
+import BackgroundImage from "../../image/s7.jpg"
+import eventImage1 from "../../image/ser1.jpg"
+import eventImage2 from "../../image/ser2.jpg"
+import eventImage3 from "../../image/ser3.jpg"
+import eventImage4 from "../../image/ser4.jpeg"
+const Services = () => {
   return (
     <div>
       <div className="head" style={{ backgroundImage: `url(${BackgroundImage})`}}>
@@ -107,4 +107,4 @@ const Servicesmain = () => {
   )
 }
 
-export default Servicesmain
+export default Services

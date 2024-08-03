@@ -1,10 +1,10 @@
 
-import '../pages/Aboutmain.css';
-import photo from '../image/logosg.png'
-import img from '../image/athiti.png'
+import './About.css'
+import photo from '../../image/logosg.png'
+import img from '../../image/athiti.png'
 import { FaChevronDown } from "react-icons/fa";
 
-const AboutMain = () => {
+const About = () => {
   return (
     <div className="about-us-container">
       <div className="about-us-wrapper">
@@ -87,4 +87,4 @@ const AboutMain = () => {
   );
 };
 
-export default AboutMain;
+export default About;

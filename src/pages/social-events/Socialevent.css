@@ -1,0 +1,9 @@
+.coming {
+    /* Other styles for the .coming container */
+    text-align: center; /* Centers the child element */
+  }
+  
+  .center-image {
+    display: inline-block; /* Ensures proper centering */
+  }
+  
