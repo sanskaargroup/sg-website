@@ -1,19 +1,20 @@
 import {useState} from "react";
-import "./EnquiryForm.css";
 import {countryList} from "../../utils/countryList";
-import {enquiryFormSchema} from "../../utils/schema";
+import {careersFormSchema} from "../../utils/schema";
 import toast, {Toaster} from "react-hot-toast";
+
+import "./careersForm.css";
 
 const port = import.meta.env.VITE_PORT;
 
-const EnquiryForm = () => {
+const CareersForm = () => {
 	const [formData, setFormData] = useState({
 		name: "",
 		email: "",
 		phone: 0,
 		country: "India",
 		city: "",
-		query: "",
+		skills: "",
 	});
 
 	const [formErrors, setFormErrors] = useState(null);
@@ -33,13 +34,13 @@ const EnquiryForm = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const validatedFields = enquiryFormSchema.safeParse({
+			const validatedFields = careersFormSchema.safeParse({
 				name: formData.name,
 				email: formData.email,
 				phone: formData.phone,
 				country: formData.country,
 				city: formData.city,
-				query: formData.query,
+				skills: formData.skills,
 			});
 
 			if (!validatedFields.success) {
@@ -48,14 +49,16 @@ const EnquiryForm = () => {
 				setFormErrors(formErrors);
 			} else {
 				setFormErrors(null);
-				const response = await fetch(`http://localhost:${port}/enquire`, {
+				console.log("sending data to server");
+				const response = await fetch(`http://localhost:${port}/career`, {
 					method: "POST",
 					headers: {
 						"Content-Type": "application/json",
 					},
 					body: JSON.stringify(formData),
 				});
-				const data = await response.json(); // Parse response JSON
+				
+				const data = await response.json();
 				console.log("response: ", data);
 
 				if (!response.ok) {
@@ -68,14 +71,13 @@ const EnquiryForm = () => {
 		} catch (error) {
 			console.error("Error fetching data:", error); // Handle fetch errors
 			toast.error("Internal Server Error, please contact Administrator");
-
 		}
 	};
 
 	return (
-		<div className="enquiry-container">
-			<form onSubmit={handleSubmit} className="enquiry-form">
-				<h2>Enquiry Form</h2>
+		<div className="career-container">
+			<form onSubmit={handleSubmit} className="career-form">
+				<h2>Careers Form</h2>
 				<div className="form-group">
 					<label>
 						Name *
@@ -145,19 +147,19 @@ const EnquiryForm = () => {
 				</div>
 				<div className="form-group">
 					<label>
-						Query *
+						Skills *
 						<textarea
 							type="text"
-							placeholder="Query"
-							name="query"
-							value={formData.query}
+							placeholder="skills"
+							name="skills"
+							value={formData.skills}
 							onChange={handleChange}
 							required></textarea>
 					</label>
-					{formErrors && formErrors.errors.query && (
+					{formErrors && formErrors.errors.skills && (
 						<div style={{fontSize: "14px", color: "red"}}>
-							<p style={{color: "red"}}>Query must:</p>
-							{formErrors.errors.ciqueryty}
+							<p style={{color: "red"}}>skills must:</p>
+							{formErrors.errors.skills}
 						</div>
 					)}
 				</div>
@@ -184,4 +186,5 @@ const EnquiryForm = () => {
 	);
 };
 
-export default EnquiryForm;
+export default CareersForm;
+

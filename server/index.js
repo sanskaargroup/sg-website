@@ -1,7 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
-import Enquiry from "./db/db.js";
+import {Enquiry, Career} from "./db/db.js";
 import {oneDayAgo, oneWeekAgo, oneMonthAgo, threeMonthsAgo, sixMonthsAgo} from "./utils/date.js";
 import dotenv from "dotenv";
 dotenv.config({path: "../.env"});
@@ -13,7 +13,7 @@ app.use(cors());
 const port = process.env.PORT || 5000;
 //TODO: ADD DATE TO SCHEMA TO EXTRACT DATEWISE DATA
 
-app.post("/", async (req, res) => {
+app.post("/enquire", async (req, res) => {
 	try {
 		console.log("req.body: ", req.body);
 		if (!req.body) {
@@ -23,6 +23,22 @@ app.post("/", async (req, res) => {
 		await newEnquiry.save();
 		console.log("newEnquiry created: ", newEnquiry);
 		res.status(200).json({message: "Query sent successfully"});
+	} catch (e) {
+		console.log("error in finding req: ", e);
+		res.status(500).json({message: "Internal server error, please try again"});
+	}
+});
+
+app.post("/career", async (req, res) => {
+	try {
+		console.log("req.body: ", req.body);
+		if (!req.body) {
+			return res.status(404).json({message: "No form data found"});
+		}
+		const newApplicant = new Career({...req.body, timestamp: Date.now()});
+		await newApplicant.save();
+		console.log("newApplicant created: ", newApplicant);
+		res.status(200).json({message: "Application sent successfully"});
 	} catch (e) {
 		console.log("error in finding req: ", e);
 		res.status(500).json({message: "Internal server error, please try again"});

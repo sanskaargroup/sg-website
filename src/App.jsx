@@ -17,6 +17,7 @@ import Testimonials from "./pages/testimonials/Testimonials";
 import Blog from "./pages/blog/Blog";
 import Contact from "./pages/contact-us/Contact";
 import Spinner from "./components/Spinner";
+import Careers from "./pages/careers/careers";
 
 export default function App() {
   const [loading, setLoading] = useState(true);
@@ -45,6 +46,7 @@ export default function App() {
           <Route path="/Testimonial" element = {<Testimonials/>}/>
           <Route path="/Blog" element = {<Blog/>}/>
           <Route path="/ContactUs" element = {<Contact/>}/>
+          <Route path="/careers" element = {<Careers/>}/>
         </Routes>
         <div>
         <Footer />

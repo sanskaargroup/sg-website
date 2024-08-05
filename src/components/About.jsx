@@ -27,7 +27,7 @@ const About = () => {
                         <img src={P1} alt="" />
                         <h3>SOCIAL EVENTS</h3>
                         <TfiLineDotted  className="dotted"/>
-                        <p>Sanskaar brings foth its expertise and finesse in creating concept based social events which not only make the event immemorable with the very fact of it being an important date for our…</p>
+                        <p>Sanskaar brings forth its expertise and finesse in creating concept based social events which not only make the event immemorable with the very fact of it being an important date for our…</p>
                     </div>
                     <div className="content2">
                         <img src={P2} alt="" />
