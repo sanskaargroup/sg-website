@@ -10,7 +10,7 @@ import image3 from "../../image/image3.jpg";
 import image4 from "../../image/image4.jpg";
 import image5 from "../../image/image5.jpg";
 import image6 from "../../image/image6.jpg";
-import image7 from "../../image/image7.jpg"
+import image7 from "../../image/image7.jpg";
 import image8 from "../../image/image8.jpg";
 
 import "./CorporateEvents.css";
@@ -43,7 +43,7 @@ const CorporateEvents = () => {
 								<li>INDIA MEDICAL DEVICE EXPO 2017</li>
 								<li>AAJEEVIKA 2017</li>
 								<li>GES 2017</li>
-								<li>INDIA – AFRICA HEALTH CO- OPERATION PROGRAM 2017</li>
+								<li>INDIA -- AFRICA HEALTH CO- OPERATION PROGRAM 2017</li>
 								<li>INDIA INTEGRATED LOGISTICS & TRANSPORT SUMMIT 2017</li>
 								<li>ADVANTAGE HEALTHCARE INDIA 2017</li>
 								<li>BIRTH CENTENARY CELEBRATIONS OF NANAJI DESHMUKH 2017</li>
@@ -64,13 +64,19 @@ const CorporateEvents = () => {
 							<ul>
 								<li>India – Kyrgyz Health Co – Operation Programme 2017Bishkek, Kyrgyzstan</li>
 								<li>Medex 2017Yangon, Myanmar</li>
-								<li>Namaskar Africa 2017Ghana</li>
+								<li>Namaskar Africa 2017: Ghana</li>
 								<li>Oman Health Exhibition and Conference 2018Muscat, Oman</li>
 								<li>INDIA PHARMA 2018</li>
 								<li>INDIA MEDICAL DEVICE EXPO 2018</li>
-								<li>Mtech Kiev 2018Kiev, Ukraine</li>
-								<li>Hestourex 2018Antalya, Turkey</li>
-								<li>International Conference on Medical Tourism 2018Tehran, Iran</li>
+								<li>Mtech Kiev 2018: Kiev, Ukraine</li>
+								<li>
+									<a
+										href="https://drive.google.com/drive/folders/1Ca-htIE_7IxIlyDVqbTAr3FBg2Cvr2Gd?usp=sharing"
+										target="_blank">
+										Hestourex 2018 Antalya, Turkey
+									</a>
+								</li>
+								<li>International Conference on Medical Tourism 2018: Tehran, Iran</li>
 								<li>WED 2018</li>
 								<li>IPHEX 2018</li>
 							</ul>
@@ -85,9 +91,13 @@ const CorporateEvents = () => {
 						<div className="year0-content">
 							<img src={year2} alt="" />
 							<ul>
-								<li>Hestourex 2019Antalya, Turkey</li>
-								<li>Namaskar Africa 2019Kenya and Tanzania</li>
-								<li>ExpoMed 2019Batumi, Georgia</li>
+								<li>Hestourex 2019: Antalya, Turkey</li>
+								<li>Namaskar Africa 2019: Kenya and Tanzania</li>
+								<a
+									href="https://drive.google.com/drive/folders/1emqr9jqn9vwMk5UHNdDISVOZWSraZICh?usp=sharing"
+									target="_blank">
+									<li>ExpoMed 2019: Batumi, Georgia</li>
+								</a>
 								<li>Oman Health Exhibition and Conference 2019Muscat, Oman</li>
 								<li>Mtech 2019Kiev, Ukraine</li>
 								<li>2nd Medical Tourism Asia Summit 2019Kathmandu, Nepal</li>
