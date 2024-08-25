@@ -56,7 +56,7 @@ export const Header = () => {
 	const [isDeleting, setIsDeleting] = useState(false);
 	const [text, setText] = useState("");
 	const [delta, setDelta] = useState(200); // Initial typing speed
-	const toRotate = ["Welcome to Sanskaar Group", "We handle   You make memories"];
+	const toRotate = ["Welcome to Sanskaar Group", "We handle ,  You make memories"];
 	const typingSpeed = 150;
 	const deletingSpeed = 100;
 	const period = 2000;

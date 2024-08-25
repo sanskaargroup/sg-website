@@ -76,7 +76,7 @@ const Footer = () => {
 								scrolling="no"
 								marginHeight="0"
 								marginWidth="0"
-								src="https://maps.google.com/maps?width=320&amp;height=200&amp;hl=en&amp;q=IITL%20NIMBUS%20THE%20HYDE%20PARK%20Sector%2078%20Noida,%20Uttar%20Pradesh%20201305+(Sanskaar%20Group)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+								src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3431.1949997408283!2d77.388414!3d28.563782!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce44eb7bf4559%3A0xeaeee3997b80bd80!2sIITL%20Nimbus%20The%20Hyde%20Park%20Noida!5e1!3m2!1sen!2sus!4v1724526739218!5m2!1sen!2sus">
 								<a href="https://www.gps.ie/">gps tracker sport</a>
 							</iframe>
 						</div>
