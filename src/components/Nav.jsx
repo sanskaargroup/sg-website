@@ -30,7 +30,7 @@ const Nav = () => {
           <li><Link to="/Services">Services</Link></li>
           <li><Link to="/SocialEvents">Social Events</Link></li>
           <li><Link to="/CorporateEvents">Corporate Events</Link></li>
-          <li><Link to="/Testimonial">Testimonial</Link></li>
+          <li><Link to="/Gallery">Gallery</Link></li>
           <li><Link to="/Blog">Blog</Link></li>
           <li className="contact"><Link to="/ContactUs">Contact Us</Link></li>
         </ul>
@@ -44,7 +44,7 @@ const Nav = () => {
           <li><Link to="/Services" onClick={hideSidebar}>Services</Link></li>
           <li><Link to="/SocialEvents" onClick={hideSidebar}>Social Events</Link></li>
           <li><Link to="/CorporateEvents" onClick={hideSidebar}>Corporate Events</Link></li>
-          <li><Link to="/Testimonial" onClick={hideSidebar}>Testimonial</Link></li>
+          <li><Link to="/Gallery" onClick={hideSidebar}>Gallery</Link></li>
           <li><Link to="/Blog" onClick={hideSidebar}>Blog</Link></li>
           <li className="contact"><Link to="/ContactUs" onClick={hideSidebar}>Contact Us</Link></li>
         </ul>

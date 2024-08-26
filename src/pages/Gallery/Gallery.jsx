@@ -1,6 +1,6 @@
 
 import coming from "../../image/coming.gif"
-const Testimonials = () => {
+const Gallery = () => {
   return (
     <div className="coming">
       <img src={coming} alt="" />
@@ -8,4 +8,4 @@ const Testimonials = () => {
   )
 }
 
-export default Testimonials;
+export default Gallery;

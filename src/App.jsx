@@ -18,7 +18,7 @@ import CorporateEvents from "./pages/corporate-events/CorporateEvents";
 import Home from "./pages/home/Home";
 import Services from "./pages/services/Services";
 import SocialEvents from "./pages/social-events/Socialevent";
-import Testimonials from "./pages/testimonials/Testimonials";
+import Gallery from "./pages/Gallery/Gallery";
 import Owner from "./components/private-routes/Owner";
 
 export default function App() {
@@ -44,7 +44,7 @@ export default function App() {
 					<Route path="/Services" element={<Services />} />
 					<Route path="/SocialEvents" element={<SocialEvents />} />
 					<Route path="/CorporateEvents" element={<CorporateEvents />} />
-					<Route path="/Testimonial" element={<Testimonials />} />
+					<Route path="/Gallery" element={<Gallery />} />
 					<Route path="/Blog" element={<Blog />} />
 					<Route path="/ContactUs" element={<Contact />} />
 					<Route path="/careers" element={<Careers />} />
