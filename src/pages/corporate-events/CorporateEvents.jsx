@@ -136,7 +136,7 @@ const CorporateEvents = () => {
 					</div>
 					<div className="gallery">
 						<h3>Glimpse of events</h3>
-						<div className="event-images">
+						<div className="sevent-images">
 							<img src={image1} alt="" />
 							<img src={image4} alt="" />
 							<img src={image7} alt="" />

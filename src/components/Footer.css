@@ -118,7 +118,17 @@
 .foot-us{
   margin-top: 3rem;
 }
+.social a {
+  margin: 0 5px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s;
+}
 
+.social a:hover {
+  color: #15872e;
+}
 @media (max-width: 768px) {
   .footer-container {
       flex-direction: column;

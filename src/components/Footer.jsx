@@ -1,6 +1,9 @@
 import "./Footer.css";
 import logo from "../image/logo.png";
 import {Link} from "react-router-dom";
+import { LuInstagram } from "react-icons/lu";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
 	return (
@@ -97,6 +100,11 @@ const Footer = () => {
 									<a href="tel:+919999482332">+9199994 82332</a>
 								</p>
 							</div>
+							<div className="social">
+          					  <a href={'https://www.instagram.com/sanskaargroup/?utm_source=qr'} target="_blank" rel="noopener noreferrer"><LuInstagram /></a>
+          					  <a href={'https://www.linkedin.com/company/sanakaar-group/'} target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+          					  <a href={''} target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
+          					</div>
 						</div>
 					</div>
 				</div>

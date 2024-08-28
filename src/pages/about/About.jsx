@@ -68,9 +68,9 @@ const About = () => {
             </p>
           </div>
           <div className="aboutus-card">
-            <h2>Our Approach</h2>
+            <h2>Our 360-Degree Approach</h2>
             <p>
-              Sanskaar our special team streamlines to offer a bird's-eye view of the process from event creation, to make your events memorable and awesome.
+            Sanskaar Group is a national event management company with a strong focus on excellence. Our 360-degree approach ensures that every aspect of your event is meticulously planned, seamlessly executed, and flawlessly coordinated. We pride ourselves on our attention to detail, creative approach, and exceptional customer service, making us the preferred choice for clients seeking a seamless and unforgettable event management experience. 
             </p>
           </div>
           <div className="aboutus-card">

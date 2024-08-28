@@ -85,14 +85,14 @@
   font-family: "Cinzel";
 }
 
-.event-images{
+.sevent-images{
  width: 100%;
  display: flex;
  flex-wrap: wrap;
  justify-content: center;
  align-items: center;
 }
-.event-images img{
+.sevent-images img{
   margin: 1em;
 }
 .gallery button {
@@ -233,7 +233,7 @@
       margin: 2rem;
   }
 
-  .event-images img {
+  .sevent-images img {
       margin: 0.5em;
   }
 
