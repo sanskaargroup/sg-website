@@ -1,4 +1,4 @@
-
+import "./Gallery.css"
 import coming from "../../image/coming.gif"
 const Gallery = () => {
   return (
