@@ -5,16 +5,18 @@ import toast, {Toaster} from "react-hot-toast";
 
 import "./careersForm.css";
 
-const port = import.meta.env.VITE_PORT;
+const base_url = import.meta.env.VITE_BASE_URL;
 
 const CareersForm = () => {
 	const [formData, setFormData] = useState({
 		name: "",
-		email: "",
 		phone: 0,
-		country: "India",
-		city: "",
-		skills: "",
+		aadhar: 0,
+		yoe: 0,
+		email: "",
+		address: "",
+		// country: "India",
+		// skills: "",
 	});
 
 	const [formErrors, setFormErrors] = useState(null);
@@ -22,12 +24,15 @@ const CareersForm = () => {
 	const handleChange = (e) => {
 		console.log("in handle change, e.target:", e.target);
 		const {name, value} = e.target;
-		if (name === "phone") {
-			let newValue = parseInt(value);
-			setFormData({...formData, [name]: newValue});
+
+		if (name === "phone" || name === "aadhar" || name === "yoe") {
+			// Convert value to a number for both phone and aadhar fields
+			const numericValue = Number(value);
+			setFormData({...formData, [name]: numericValue});
 		} else {
 			setFormData({...formData, [name]: value});
 		}
+
 		console.log(formData);
 	};
 
@@ -36,11 +41,11 @@ const CareersForm = () => {
 		try {
 			const validatedFields = careersFormSchema.safeParse({
 				name: formData.name,
-				email: formData.email,
 				phone: formData.phone,
-				country: formData.country,
-				city: formData.city,
-				skills: formData.skills,
+				aadhar: formData.aadhar,
+				yoe: formData.yoe,
+				email: formData.email,
+				address: formData.address,
 			});
 
 			if (!validatedFields.success) {
@@ -50,14 +55,14 @@ const CareersForm = () => {
 			} else {
 				setFormErrors(null);
 				console.log("sending data to server");
-				const response = await fetch(`http://localhost:${port}/career`, {
+				const response = await fetch(`${base_url}/career`, {
 					method: "POST",
 					headers: {
 						"Content-Type": "application/json",
 					},
 					body: JSON.stringify(formData),
 				});
-				
+
 				const data = await response.json();
 				console.log("response: ", data);
 
@@ -85,23 +90,15 @@ const CareersForm = () => {
 					</label>
 					{formErrors && formErrors.errors.name && (
 						<div style={{fontSize: "14px", color: "red"}}>
-							<p style={{color: "red"}}>Name must:</p>
-							{formErrors.errors.name}
+							<ul>
+								{formErrors.errors.name.map((error, index) => (
+									<li key={index}>{error}</li>
+								))}
+							</ul>
 						</div>
 					)}
 				</div>
-				<div className="form-group">
-					<label>
-						Email *
-						<input type="text" placeholder="Email" name="email" onChange={handleChange} />
-					</label>
-					{formErrors && formErrors.errors.email && (
-						<div style={{fontSize: "14px", color: "red"}}>
-							<p style={{color: "red"}}>Email must:</p>
-							{formErrors.errors.email}
-						</div>
-					)}
-				</div>
+
 				<div className="form-group">
 					<label>
 						Phone *
@@ -109,31 +106,87 @@ const CareersForm = () => {
 					</label>
 					{formErrors && formErrors.errors.phone && (
 						<div style={{fontSize: "14px", color: "red"}}>
-							<p style={{color: "red"}}>phone must:</p>
-							{formErrors.errors.phone}
+							<ul>
+								{formErrors.errors.phone.map((error, index) => (
+									<li key={index}>{error}</li>
+								))}
+							</ul>
 						</div>
 					)}
 				</div>
+
 				<div className="form-group">
 					<label>
-						Country
-						<select type="string" name="country" placeholder="Country" onChange={handleChange}>
+						Aadhar Number *
+						<input type="number" placeholder="Aadhar number" name="aadhar" onChange={handleChange} />
+					</label>
+					{formErrors && formErrors.errors.aadhar && (
+						<div style={{fontSize: "14px", color: "red"}}>
+							<ul>
+								{formErrors.errors.aadhar.map((error, index) => (
+									<li key={index}>{error}</li>
+								))}
+							</ul>
+						</div>
+					)}
+				</div>
+
+				<div className="form-group">
+					<label>
+						Years of Experience *
+						<input type="number" placeholder="Years of Experience" name="yoe" onChange={handleChange} />
+					</label>
+					{formErrors && formErrors.errors.yoe && (
+						<div style={{fontSize: "14px", color: "red"}}>
+							<ul>
+								{formErrors.errors.yoe.map((error, index) => (
+									<li key={index}>{error}</li>
+								))}
+							</ul>
+						</div>
+					)}
+				</div>
+
+				<div className="form-group">
+					<label>
+						Email *
+						<input type="text" placeholder="Email" name="email" onChange={handleChange} />
+					</label>
+					{formErrors && formErrors.errors.email && (
+						<div style={{fontSize: "14px", color: "red"}}>
+							<ul>
+								{formErrors.errors.email.map((error, index) => (
+									<li key={index}>{error}</li>
+								))}
+							</ul>
+						</div>
+					)}
+				</div>
+
+				<div className="form-group">
+					<label>
+						Address
+						<input type="text" placeholder="Address" name="address" onChange={handleChange} />
+						{/* <select type="string" name="country" placeholder="Country" onChange={handleChange}>
 							{countryList.map((country) => (
 								<option key={country} value={country}>
 									{country}
 								</option>
 							))}
-						</select>
+						</select> */}
 					</label>
 
-					{formErrors && formErrors.errors.country && (
+					{formErrors && formErrors.errors.address && (
 						<div style={{fontSize: "14px", color: "red"}}>
-							<p style={{color: "red"}}>Country must:</p>
-							{formErrors.errors.country}
+							<ul>
+								{formErrors.errors.address.map((error, index) => (
+									<li key={index}>{error}</li>
+								))}
+							</ul>
 						</div>
 					)}
 				</div>
-				<div className="form-group">
+				{/* <div className="form-group">
 					<label>
 						City *
 						<input type="text" placeholder="City" name="city" onChange={handleChange} />
@@ -162,7 +215,7 @@ const CareersForm = () => {
 							{formErrors.errors.skills}
 						</div>
 					)}
-				</div>
+				</div> */}
 				<button type="submit" className="submit-button">
 					Send
 				</button>
@@ -187,4 +240,3 @@ const CareersForm = () => {
 };
 
 export default CareersForm;
-

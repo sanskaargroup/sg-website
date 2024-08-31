@@ -69,13 +69,7 @@ const CorporateEvents = () => {
 								<li>INDIA PHARMA 2018</li>
 								<li>INDIA MEDICAL DEVICE EXPO 2018</li>
 								<li>Mtech Kiev 2018: Kiev, Ukraine</li>
-								<li>
-									<a
-										href="https://drive.google.com/drive/folders/1Ca-htIE_7IxIlyDVqbTAr3FBg2Cvr2Gd?usp=sharing"
-										target="_blank">
-										Hestourex 2018 Antalya, Turkey
-									</a>
-								</li>
+								<li>Hestourex 2018 Antalya, Turkey</li>
 								<li>International Conference on Medical Tourism 2018: Tehran, Iran</li>
 								<li>WED 2018</li>
 								<li>IPHEX 2018</li>
@@ -93,11 +87,8 @@ const CorporateEvents = () => {
 							<ul>
 								<li>Hestourex 2019: Antalya, Turkey</li>
 								<li>Namaskar Africa 2019: Kenya and Tanzania</li>
-								<a
-									href="https://drive.google.com/drive/folders/1emqr9jqn9vwMk5UHNdDISVOZWSraZICh?usp=sharing"
-									target="_blank">
-									<li>ExpoMed 2019: Batumi, Georgia</li>
-								</a>
+
+								<li>ExpoMed 2019: Batumi, Georgia</li>
 								<li>Oman Health Exhibition and Conference 2019Muscat, Oman</li>
 								<li>Mtech 2019Kiev, Ukraine</li>
 								<li>2nd Medical Tourism Asia Summit 2019Kathmandu, Nepal</li>

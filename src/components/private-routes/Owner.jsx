@@ -46,25 +46,23 @@ const Owner = () => {
 		const doc = new jsPDF();
 		doc.autoTable({
 			head: [
-				["S.No", "Name", "Email", "Phone", "Country", "City", selectedProfile === "enquirydata" ? "Query" : "Skills"],
+				selectedProfile === "enquirydata"
+					? ["S.No", "Name", "Email", "Phone", "Country", "City", "Query"]
+					: ["S.No", "Name", "Email", "Phone", "Aadhar", "YOE", "Address"],
 			],
-			body: enquiries.map((enquiry, index) => [
-				index + 1,
-				enquiry.name,
-				enquiry.email,
-				enquiry.phone,
-				enquiry.country,
-				enquiry.city,
-				selectedProfile === "enquirydata" ? enquiry.query : enquiry.skills,
-			]),
+			body: enquiries.map((enquiry, index) =>
+				selectedProfile === "enquirydata"
+					? [index + 1, enquiry.name, enquiry.email, enquiry.phone, enquiry.country, enquiry.city, enquiry.query]
+					: [index + 1, enquiry.name, enquiry.email, enquiry.phone, enquiry.aadhar, enquiry.yoe, enquiry.address],
+			),
 		});
 		doc.save("table_data.pdf");
 	};
 
 	return (
-		<div style={styles.owner} >
+		<div style={styles.owner}>
 			<h1>Select Time Duration and Profile</h1>
-			<select value={selectedTime} onChange={handleChangeTime}>
+			<select value={selectedTime} onChange={handleChangeTime} style={{marginRight: "10px"}}>
 				<option value="" disabled>
 					Select duration
 				</option>
@@ -75,7 +73,7 @@ const Owner = () => {
 				<option value="6m">Last 6 months</option>
 			</select>
 
-			<select value={selectedProfile} onChange={handleChangeProfile}>
+			<select value={selectedProfile} onChange={handleChangeProfile} style={{marginRight: "10px"}}>
 				<option value="" disabled>
 					Select profile
 				</option>
@@ -97,9 +95,19 @@ const Owner = () => {
 								<th style={styles.th}>Name</th>
 								<th style={styles.th}>Email</th>
 								<th style={styles.th}>Phone</th>
-								<th style={styles.th}>Country</th>
-								<th style={styles.th}>City</th>
-								<th style={styles.th}>{selectedProfile === "enquirydata" ? "Query" : "Skills"}</th>
+								{selectedProfile === "enquirydata" ? (
+									<>
+										<th style={styles.th}>Country</th>
+										<th style={styles.th}>City</th>
+										<th style={styles.th}>Query</th>
+									</>
+								) : (
+									<>
+										<th style={styles.th}>Aadhar</th>
+										<th style={styles.th}>YOE</th>
+										<th style={styles.th}>Address</th>
+									</>
+								)}
 							</tr>
 						</thead>
 						<tbody>
@@ -109,14 +117,26 @@ const Owner = () => {
 									<td style={styles.td}>{enquiry.name}</td>
 									<td style={styles.td}>{enquiry.email}</td>
 									<td style={styles.td}>{enquiry.phone}</td>
-									<td style={styles.td}>{enquiry.country}</td>
-									<td style={styles.td}>{enquiry.city}</td>
-									<td style={styles.td}>{selectedProfile === "enquirydata" ? enquiry.query : enquiry.skills}</td>
+									{selectedProfile === "enquirydata" ? (
+										<>
+											<td style={styles.td}>{enquiry.country}</td>
+											<td style={styles.td}>{enquiry.city}</td>
+											<td style={styles.td}>{enquiry.query}</td>
+										</>
+									) : (
+										<>
+											<td style={styles.td}>{enquiry.aadhar}</td>
+											<td style={styles.td}>{enquiry.yoe}</td>
+											<td style={styles.td}>{enquiry.address}</td>
+										</>
+									)}
 								</tr>
 							))}
 						</tbody>
 					</table>
-					<button onClick={exportPDF}>Export to PDF</button>
+					<button onClick={exportPDF} style={{marginTop: "10px"}}>
+						Export to PDF
+					</button>
 				</>
 			) : (
 				<p>No data available for the selected duration and profile.</p>
@@ -128,83 +148,83 @@ const Owner = () => {
 const styles = {
 	owner: {
 		flex: 1,
-		backgroundColor: '#f8f9fa',
-		padding: '30px',
-		borderRadius: '8px',
-		boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-		maxWidth: '900px',
-		margin: '15rem auto',
-		textAlign: 'center',
+		backgroundColor: "#f8f9fa",
+		padding: "30px",
+		borderRadius: "8px",
+		boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+		maxWidth: "900px",
+		margin: "15rem auto",
+		textAlign: "center",
 	},
 	heading: {
-		fontSize: '24px',
-		marginBottom: '20px',
-		color: '#333',
+		fontSize: "24px",
+		marginBottom: "20px",
+		color: "#333",
 	},
 	select: {
-		width: '100%',
-		padding: '10px',
-		marginBottom: '20px',
-		borderRadius: '4px',
-		border: '1px solid #ccc',
-		fontSize: '16px',
-		backgroundColor: '#fff',
-		color: '#333',
-		boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+		width: "100%",
+		padding: "10px",
+		marginBottom: "20px",
+		borderRadius: "4px",
+		border: "1px solid #ccc",
+		fontSize: "16px",
+		backgroundColor: "#fff",
+		color: "#333",
+		boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
 	},
 	button: {
-		backgroundColor: '#007bff',
-		color: 'white',
-		padding: '10px 20px',
-		border: 'none',
-		borderRadius: '4px',
-		fontSize: '16px',
-		cursor: 'pointer',
-		marginTop: '20px',
-		margin: '4rem',
-		transition: 'background-color 0.3s ease',
+		backgroundColor: "#007bff",
+		color: "white",
+		padding: "10px 20px",
+		border: "none",
+		borderRadius: "4px",
+		fontSize: "16px",
+		cursor: "pointer",
+		marginTop: "20px",
+		margin: "4rem",
+		transition: "background-color 0.3s ease",
 	},
 	buttonHover: {
-		backgroundColor: '#0056b3',
+		backgroundColor: "#0056b3",
 	},
 	table: {
-		width: '100%',
-		borderCollapse: 'collapse',
-		marginTop: '20px',
+		width: "100%",
+		borderCollapse: "collapse",
+		marginTop: "20px",
 	},
 	th: {
-		border: '1px solid #ddd',
-		padding: '12px',
-		textAlign: 'left',
-		backgroundColor: '#007bff',
-		color: 'white',
-		fontWeight: 'bold',
+		border: "1px solid #ddd",
+		padding: "12px",
+		textAlign: "left",
+		backgroundColor: "#007bff",
+		color: "white",
+		fontWeight: "bold",
 	},
 	td: {
-		border: '1px solid #ddd',
-		padding: '12px',
-		textAlign: 'left',
-		backgroundColor: '#f9f9f9',
-		color: '#333',
+		border: "1px solid #ddd",
+		padding: "12px",
+		textAlign: "left",
+		backgroundColor: "#f9f9f9",
+		color: "#333",
 	},
 	error: {
-		color: 'red',
-		marginTop: '10px',
+		color: "red",
+		marginTop: "10px",
 	},
 	exportButton: {
-		backgroundColor: '#28a745',
-		color: 'white',
-		padding: '10px 20px',
-		border: 'none',
-		borderRadius: '4px',
-		fontSize: '16px',
-		cursor: 'pointer',
-		marginTop: '20px',
-		transition: 'background-color 0.3s ease',
+		backgroundColor: "#28a745",
+		color: "white",
+		padding: "10px 20px",
+		border: "none",
+		borderRadius: "4px",
+		fontSize: "16px",
+		cursor: "pointer",
+		marginTop: "20px",
+		transition: "background-color 0.3s ease",
 	},
 	exportButtonHover: {
-		backgroundColor: '#218838',
-	}
+		backgroundColor: "#218838",
+	},
 };
 
 export default Owner;

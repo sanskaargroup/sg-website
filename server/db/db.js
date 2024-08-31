@@ -13,11 +13,11 @@ const enquirySchema = new mongoose.Schema({
 
 const careerSchema = new mongoose.Schema({
 	name: {type: String, required: true},
-	email: {type: String, required: true},
 	phone: {type: Number, required: true},
-	country: {type: String, required: true},
-	city: {type: String, required: true},
-	skills: {type: String, required: true},
+	aadhar: {type: Number, required: true},
+	yoe: {type: Number, required: true},
+	email: {type: String,},
+	address: {type: String, required: true},
 	timestamp: {type: Number, default: Date.now}, // Default to current epoch timestamp,
 });
 
