@@ -3,6 +3,8 @@ import "./EnquiryForm.css";
 import {countryList} from "../../utils/countryList";
 import {enquiryFormSchema} from "../../utils/schema";
 import toast, {Toaster} from "react-hot-toast";
+import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const port = import.meta.env.VITE_PORT;
 
@@ -178,7 +180,15 @@ const EnquiryForm = () => {
 				<p>Sanskaar Group</p>
 				<p>J-104, FF , IITL NIMBUS, The Hyde Park, </p>
 				<p>Sector-78, Noida -201301, India</p>
+				<br />
+				<p  style={{ }}>
+				Wanna join our team....
+				<Link to="/careers" style={{ color: "green", textDecoration: "none" }}>
+					Join us
+				</Link>
+				</p>
 			</div>
+			
 			<Toaster position="bottom-right" reverseOrder={false} />
 		</div>
 	);

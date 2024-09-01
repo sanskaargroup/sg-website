@@ -1,8 +1,6 @@
 import React from "react";
 import "./Gallery.css";
-import sc1 from "../../image/sc1.jpg";
-import sc2 from "../../image/sc2.jpg";
-import sc3 from "../../image/sc3.jpg";
+import BackgroundImage from "../../image/s7.jpg";
 
 // Regex pattern to match everything after the last '/'
 let regex = /\/([^/]+)$/;
@@ -167,9 +165,7 @@ const events = [
 const Gallery = () => {
 	return (
 		<div className="gallery-container">
-			<br />
-			<br />
-
+      
 			{events.map((event) => (
 				<div key={event.id} className="gevent-card">
 					<h2 className="event-title">{event.title}</h2>

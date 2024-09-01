@@ -7,14 +7,23 @@ import CareersForm from './careersForm';
 const Careers = () => {
   return (
     <div className="Form">
+
       <div className="head" style={{ backgroundImage: `url(${BackgroundImage})` }}>
-        <h1>Services</h1>
+        <h1>Careers</h1>
       </div>
       <div className="image">
-        <img src={img2} alt="" style={{"height": "250px", width: "250px" }} />
+        <img src={img2} alt="" style={{"height": "30%", width: "70%" }} />
       </div>
-      <p className="para">Join our Team!</p>
       <CareersForm />
+      
+      <div className='contractual' style={{width: "98%" , height:"3rem" ,fontSize:"7px" ,backgroundColor:"white",display:"flex",
+        justifyContent:"center",alignItems:"center",margin:"3em"}}>
+        <p  style={{fontSize:"2.5em" }}>
+          Wanna join our team on contractual basis....
+          <a style={{ color:"green", textDecoration:"none" }} href="https://docs.google.com/forms/d/e/1FAIpQLSfGl8sVX4f7C-hZnglDJOVp8htpZwmKPh8OyQmFJ5STRH4l0w/viewform?usp=sf_link">Join now</a>
+        </p>
+      </div>
+
     </div>
   );
 };
