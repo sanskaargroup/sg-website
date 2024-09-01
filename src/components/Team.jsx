@@ -37,8 +37,8 @@ const teamMembers = [
     image: D1,
     social: {
       facebook: '#',
-      linkedin: '#',
-      instagram: '#',
+      linkedin: 'https://www.linkedin.com/in/adv-sanya-chopra-b8132a229/',
+      instagram: 'https://www.instagram.com/sa_nya7216/',
       profile: ''
     }
   }
@@ -82,3 +82,13 @@ const Team = () => {
 }
 
 export default Team
+
+
+
+
+
+
+
+
+
+

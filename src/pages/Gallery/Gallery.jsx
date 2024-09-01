@@ -26,13 +26,33 @@ let id = 1;
 const events = [
 	{
 		id: id++,
-		title: "Advantage HealthCare India 2018",
+		title: "StoneMart Jaipur 2024",
 		photoLink: [
-			"https://drive.google.com/file/d/1SQbUyxwbO2tumM1lBW9jqgZKSToNzrP-/preview",
-			"https://drive.google.com/file/d/16xZCi9t_TiiPPbWwzdF92UDZFMIU_MIz/preview",
-			"https://drive.google.com/file/d/1qdphUBHuu9hJsvyTES3Jm2syZm1oibA7/preview",
+			"https://drive.google.com/file/d/1zojdqN6arlFAwozGmOjLQ8fnY6tNNoUL/view?usp=sharing",
+			"https://drive.google.com/file/d/1cWo_Ryhenbx8v740hD2_MseRBx4Q5_dT/view?usp=sharing",
+			"https://drive.google.com/file/d/1K3iSpUgBbTk_xyT1wBiaSPoIRa7EkH-n/view?usp=drive_link",
 		],
-		folderLink: "https://drive.google.com/drive/folders/1aj-9IqFEgRuDm1qPVZ7AQxZSf2yB3okX?usp=drive_link",
+		folderLink: "https://drive.google.com/drive/folders/17bNYQr4bFt5ZS3h6zAmiSemD8HiCfFVh?usp=drive_link",
+	},
+	{
+		id: id++,
+		title: "India Steel 2023",
+		photoLink: [
+			"https://drive.google.com/file/d/1AR5fh1hawkXnVepaXlowHu673f_zfm5p/view?usp=drive_link",
+			"https://drive.google.com/file/d/1L0OD1nhQJg4Y94aJiuRvge2rsAwXbdeZ/view?usp=drive_link",
+			"https://drive.google.com/file/d/1U1wQDQ6w4t7jD2weGMngHDBUm7oOQh0a/view?usp=drive_link",
+		],
+		folderLink: "https://drive.google.com/drive/folders/1PhjQ0yW3miL81wxxXLZlFx8jbEpR5F5p?usp=drive_link",
+	},
+	{
+		id: id++,
+		title: "G20",
+		photoLink: [
+			"https://drive.google.com/file/d/1WpAAyjhrK1t6_r5R7U81VHTQGM3pPMmk/view?usp=drive_link",
+			"https://drive.google.com/file/d/1aLBkZ6Jqtzu80HeRIwK96W6ol4agB_M_/view?usp=drive_link",
+			"https://drive.google.com/file/d/1DiZenkR3wv4tjXVfgJMf9P7ie8OBBR79/view?usp=sharing",
+		],
+		folderLink: "https://drive.google.com/drive/folders/1GDjcoHd2rLX1u1TdGmZvty5ypqPl3htc?usp=drive_link",
 	},
 	{
 		id: id++,
@@ -66,23 +86,44 @@ const events = [
 	},
 	{
 		id: id++,
-		title: "G20",
+		title: "Oman Health and Exhibition Conference 2019",
 		photoLink: [
-			"https://drive.google.com/file/d/1WpAAyjhrK1t6_r5R7U81VHTQGM3pPMmk/view?usp=drive_link",
-			"https://drive.google.com/file/d/1aLBkZ6Jqtzu80HeRIwK96W6ol4agB_M_/view?usp=drive_link",
-			"https://drive.google.com/file/d/1DiZenkR3wv4tjXVfgJMf9P7ie8OBBR79/view?usp=sharing",
+			"https://drive.google.com/file/d/1sRHgLhPIrOdGmsEF0sZhgAgB1GcvFWST/view?usp=sharing",
+			"https://drive.google.com/file/d/1w98p58LjP5xbhYpwo1rrEez_YF36Ovw1/view?usp=drive_link",
+			"https://drive.google.com/file/d/1wcRIu69PgeNsmm5WZ0SaJrtXwgMlQSGl/view?usp=drive_link",
 		],
-		folderLink: "https://drive.google.com/drive/folders/1GDjcoHd2rLX1u1TdGmZvty5ypqPl3htc?usp=drive_link",
+		folderLink: "https://drive.google.com/drive/folders/1CML8WnNUKvNEgWotwzMzD-XcIlareBoj?usp=drive_link",
 	},
 	{
 		id: id++,
-		title: "India Steel 2023",
+		title: "Advantage HealthCare India 2018",
 		photoLink: [
-			"https://drive.google.com/file/d/1AR5fh1hawkXnVepaXlowHu673f_zfm5p/view?usp=drive_link",
-			"https://drive.google.com/file/d/1L0OD1nhQJg4Y94aJiuRvge2rsAwXbdeZ/view?usp=drive_link",
-			"https://drive.google.com/file/d/1U1wQDQ6w4t7jD2weGMngHDBUm7oOQh0a/view?usp=drive_link",
+			"https://drive.google.com/file/d/1SQbUyxwbO2tumM1lBW9jqgZKSToNzrP-/preview",
+			"https://drive.google.com/file/d/16xZCi9t_TiiPPbWwzdF92UDZFMIU_MIz/preview",
+			"https://drive.google.com/file/d/1qdphUBHuu9hJsvyTES3Jm2syZm1oibA7/preview",
 		],
-		folderLink: "https://drive.google.com/drive/folders/1PhjQ0yW3miL81wxxXLZlFx8jbEpR5F5p?usp=drive_link",
+		folderLink: "https://drive.google.com/drive/folders/1aj-9IqFEgRuDm1qPVZ7AQxZSf2yB3okX?usp=drive_link",
+	},
+	{
+		id: id++,
+		title: "Global Agriculture and Food Summit 2018",
+		photoLink: [
+			"https://drive.google.com/file/d/1J2mcZc8hUhfRel34K2DR1AmUwJbZNTWq/view?usp=drive_link",
+			"https://drive.google.com/file/d/1SJ_3YwVd079SRzVxd0KhrFV-zO6VN6rm/view?usp=drive_link",
+			"https://drive.google.com/file/d/1ssk5LhGqa2kfmMiVE3lZTj8IkqZeod9R/view?usp=sharing",
+		],
+		folderLink: "https://drive.google.com/drive/folders/1BuWNvtYYkoMa4rqsXJR6xHVm9WnzaSvt?usp=drive_link",
+	},
+
+	{
+		id: id++,
+		title: "Turkey Histourex 2018",
+		photoLink: [
+			"https://drive.google.com/file/d/1q56xmdxOGUyMaS18sz9Rhyn9qjzCL8yJ/view?usp=drive_link",
+			"https://drive.google.com/file/d/1YmAhqfzAJX6WL0CzvISVxoxbav3eU40G/view?usp=drive_link",
+			"https://drive.google.com/file/d/1Ca0SyMnxQwOU7TBWonbbphGIP2oPWOkT/view?usp=drive_link",
+		],
+		folderLink: "https://drive.google.com/drive/folders/1Ca-htIE_7IxIlyDVqbTAr3FBg2Cvr2Gd?usp=drive_link",
 	},
 	{
 		id: id++,
@@ -106,7 +147,7 @@ const events = [
 	},
 	{
 		id: id++,
-		title: "MedEx 17",
+		title: "MedEx 2017",
 		photoLink: [
 			"https://drive.google.com/file/d/1Nf_SDm395Oa1dguxr4VKGwVonjuAWAoc/view?usp=drive_link",
 			"https://drive.google.com/file/d/1prBCRplITWSDR5AfATA-4Kq3qUfpLdVG/view?usp=drive_link",
@@ -114,46 +155,7 @@ const events = [
 		],
 		folderLink: "https://drive.google.com/drive/folders/1rbNmYJHTfu44G2jjzRQar6NpMzd09B0X?usp=drive_link",
 	},
-	{
-		id: id++,
-		title: "Oman Health and Exhibition Conference 2019",
-		photoLink: [
-			"https://drive.google.com/file/d/1sRHgLhPIrOdGmsEF0sZhgAgB1GcvFWST/view?usp=sharing",
-			"https://drive.google.com/file/d/1w98p58LjP5xbhYpwo1rrEez_YF36Ovw1/view?usp=drive_link",
-			"https://drive.google.com/file/d/1wcRIu69PgeNsmm5WZ0SaJrtXwgMlQSGl/view?usp=drive_link",
-		],
-		folderLink: "https://drive.google.com/drive/folders/1CML8WnNUKvNEgWotwzMzD-XcIlareBoj?usp=drive_link",
-	},
-	{
-		id: id++,
-		title: "Global Agriculture and Food Summit 2018",
-		photoLink: [
-			"https://drive.google.com/file/d/1J2mcZc8hUhfRel34K2DR1AmUwJbZNTWq/view?usp=drive_link",
-			"https://drive.google.com/file/d/1SJ_3YwVd079SRzVxd0KhrFV-zO6VN6rm/view?usp=drive_link",
-			"https://drive.google.com/file/d/1ssk5LhGqa2kfmMiVE3lZTj8IkqZeod9R/view?usp=sharing",
-		],
-		folderLink: "https://drive.google.com/drive/folders/1BuWNvtYYkoMa4rqsXJR6xHVm9WnzaSvt?usp=drive_link",
-	},
-	{
-		id: id++,
-		title: "StoneMart Jaipur 2024",
-		photoLink: [
-			"https://drive.google.com/file/d/1zojdqN6arlFAwozGmOjLQ8fnY6tNNoUL/view?usp=sharing",
-			"https://drive.google.com/file/d/1cWo_Ryhenbx8v740hD2_MseRBx4Q5_dT/view?usp=sharing",
-			"https://drive.google.com/file/d/1K3iSpUgBbTk_xyT1wBiaSPoIRa7EkH-n/view?usp=drive_link",
-		],
-		folderLink: "https://drive.google.com/drive/folders/17bNYQr4bFt5ZS3h6zAmiSemD8HiCfFVh?usp=drive_link",
-	},
-	{
-		id: id++,
-		title: "Turkey Histourex",
-		photoLink: [
-			"https://drive.google.com/file/d/1q56xmdxOGUyMaS18sz9Rhyn9qjzCL8yJ/view?usp=drive_link",
-			"https://drive.google.com/file/d/1YmAhqfzAJX6WL0CzvISVxoxbav3eU40G/view?usp=drive_link",
-			"https://drive.google.com/file/d/1Ca0SyMnxQwOU7TBWonbbphGIP2oPWOkT/view?usp=drive_link",
-		],
-		folderLink: "https://drive.google.com/drive/folders/1Ca-htIE_7IxIlyDVqbTAr3FBg2Cvr2Gd?usp=drive_link",
-	},
+
 	{
 		id: id++,
 		title: "International Congress of Medical Tourism Ukraine",
@@ -168,11 +170,21 @@ const events = [
 		id: id++,
 		title: "WMTC Asia-Pacific",
 		photoLink: [
-			"https://drive.google.com/file/d/1Y17Vi7btIFc9jh1nxs_OwwBW6ySdSdOB/view?usp=drive_link",
+			"https://drive.google.com/file/d/1ta0G1AEmOOkqaQOHVGrRtgKKElzmMVOa/view?usp=sharing",
 			"https://drive.google.com/file/d/1xok-l7DR7f87PqHzz6OSradvW-sRJi9Z/view?usp=drive_link",
 			"https://drive.google.com/file/d/1Lxp-xB_VXCj_XXiG5xI2DaHjoaoiSpip/view?usp=drive_link",
 		],
 		folderLink: "https://drive.google.com/drive/folders/1oEMZLNYi9f58-uNItwvIWS_PmAToSszX?usp=drive_link",
+	},
+	{
+		id: id++,
+		title: "India Integrated Transport and Logistics Summit 2017",
+		photoLink: [
+			"https://drive.google.com/file/d/1dQGNXYnGfSDZtWcK5gs9pkVNDph6FM_1/view?usp=sharing",
+			"https://drive.google.com/file/d/1QbuFNp9jRh1l8-hyfBeZUM1n78VauPX2/view?usp=drive_link",
+			"https://drive.google.com/file/d/1fQ8KQjVH36LjttfX-3d0OrLhgy_WpkBT/view?usp=drive_link",
+		],
+		folderLink: "https://drive.google.com/drive/folders/1-1dj-X_k0LQyUDItjqSB-MTk3peH7c5x?usp=sharing",
 	},
 	// jitna chahe utna add kr liyo
 	// aur thoda jldi kr liyo
