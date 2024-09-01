@@ -1,10 +1,9 @@
-import {useState} from "react";
+import { useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
+import { Link } from "react-router-dom";
+import { countryList } from "../../utils/countryList";
+import { enquiryFormSchema } from "../../utils/schema.ts";
 import "./EnquiryForm.css";
-import {countryList} from "../../utils/countryList";
-import {enquiryFormSchema} from "../../utils/schema";
-import toast, {Toaster} from "react-hot-toast";
-import { Link } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
 
 const port = import.meta.env.VITE_PORT;
 
@@ -70,7 +69,6 @@ const EnquiryForm = () => {
 		} catch (error) {
 			console.error("Error fetching data:", error); // Handle fetch errors
 			toast.error("Internal Server Error, please contact Administrator");
-
 		}
 	};
 
@@ -181,14 +179,15 @@ const EnquiryForm = () => {
 				<p>J-104, FF , IITL NIMBUS, The Hyde Park, </p>
 				<p>Sector-78, Noida -201301, India</p>
 				<br />
-				<p  style={{ }}>
-				Wanna join our team....
-				<Link to="/careers" style={{ color: "green", textDecoration: "none",fontSize:"1.1rem" }}>
-					Join us
-				</Link>
+				<p style={{}}>
+					Wanna join our team....
+					<Link to="/careers" style={{ color: "green", textDecoration: "none",fontSize:"1.1rem" }}>
+
+						Join us
+					</Link>
 				</p>
 			</div>
-			
+
 			<Toaster position="bottom-right" reverseOrder={false} />
 		</div>
 	);

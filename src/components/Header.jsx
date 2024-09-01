@@ -27,7 +27,6 @@ export const Header = () => {
 
 		return () => clearInterval(ticker);
 	}, [text, delta, isDeleting]);
-
 	const tick = () => {
 		const i = loopNum % toRotate.length;
 		const fullText = toRotate[i];

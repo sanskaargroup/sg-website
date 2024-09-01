@@ -1,6 +1,8 @@
 import React from "react";
 import "./Gallery.css";
-import BackgroundImage from "../../image/s7.jpg";
+import sc1 from "../../image/sc1.jpg";
+import sc2 from "../../image/sc2.jpg";
+import sc3 from "../../image/sc3.jpg";
 
 // Regex pattern to match everything after the last '/'
 let regex = /\/([^/]+)$/;
@@ -40,6 +42,7 @@ const events = [
 			"https://drive.google.com/file/d/1Dc0YebO48Ht0l8KWY80xWhYMFrLXIYT0/view?usp=drive_link",
 			"https://drive.google.com/file/d/1CvD2qCj6VRlV8cNd9SFQWOVG3RPSuUhu/view?usp=drive_link",
 		],
+		folderLink: "https://drive.google.com/drive/folders/1MdKPLG0wJzJdRHojFWVvdfIkTB7GRZO7?usp=drive_link",
 	},
 	{
 		id: id++,
@@ -49,6 +52,7 @@ const events = [
 			"https://drive.google.com/file/d/11d9CjDoqmidful075H-qUxQMyMU0A784/view?usp=drive_link",
 			"https://drive.google.com/file/d/1EHnZa7t_qdUYdDiGPWatAstU_xyJI2oR/view?usp=drive_link",
 		],
+		folderLink: "https://drive.google.com/drive/folders/17Lhj9mi3C3fiijyxSGBntyOJLwJuw1GG?usp=drive_link",
 	},
 	{
 		id: id++,
@@ -58,6 +62,7 @@ const events = [
 			"https://drive.google.com/file/d/1DYZzZMR0mmn4qA7gTkSFfUvgnlYeLeyV/view?usp=drive_link",
 			"https://drive.google.com/file/d/1FBBjjxuND5Xowuvbt5582EmaX5Cluptk/view?usp=drive_link",
 		],
+		folderLink: "https://drive.google.com/drive/folders/1LSlfnoQAOwZkxogbGyeaPswYWkcf5wGi?usp=drive_link",
 	},
 	{
 		id: id++,
@@ -67,6 +72,7 @@ const events = [
 			"https://drive.google.com/file/d/1aLBkZ6Jqtzu80HeRIwK96W6ol4agB_M_/view?usp=drive_link",
 			"https://drive.google.com/file/d/1DiZenkR3wv4tjXVfgJMf9P7ie8OBBR79/view?usp=sharing",
 		],
+		folderLink: "https://drive.google.com/drive/folders/1GDjcoHd2rLX1u1TdGmZvty5ypqPl3htc?usp=drive_link",
 	},
 	{
 		id: id++,
@@ -76,6 +82,7 @@ const events = [
 			"https://drive.google.com/file/d/1L0OD1nhQJg4Y94aJiuRvge2rsAwXbdeZ/view?usp=drive_link",
 			"https://drive.google.com/file/d/1U1wQDQ6w4t7jD2weGMngHDBUm7oOQh0a/view?usp=drive_link",
 		],
+		folderLink: "https://drive.google.com/drive/folders/1PhjQ0yW3miL81wxxXLZlFx8jbEpR5F5p?usp=drive_link",
 	},
 	{
 		id: id++,
@@ -85,6 +92,7 @@ const events = [
 			"https://drive.google.com/file/d/1bJIG1SlOZBZkQli3HiY9jy9xoOoApe_7/view?usp=drive_link",
 			"https://drive.google.com/file/d/11YoJLrpgHmh2HJZHY01BiA3CFJ-ACweY/view?usp=drive_link",
 		],
+		folderLink: "https://drive.google.com/drive/folders/1cGQ3k35uaju2fkwcbueJt2YIUH2S71Wl?usp=drive_link",
 	},
 	{
 		id: id++,
@@ -94,6 +102,7 @@ const events = [
 			"https://drive.google.com/file/d/1pGYUAoFquKYv9Zop-aWLliU1KVsH3Huw/view?usp=drive_link",
 			"https://drive.google.com/file/d/1dgEpeXdSd-szW6EFFDVQZuAgvCFe-2am/view?usp=drive_link",
 		],
+		folderLink: "https://drive.google.com/drive/folders/1nbCJUQ3txnaV94-_7g-laZLGsESLLuJu?usp=drive_link",
 	},
 	{
 		id: id++,
@@ -103,6 +112,7 @@ const events = [
 			"https://drive.google.com/file/d/1prBCRplITWSDR5AfATA-4Kq3qUfpLdVG/view?usp=drive_link",
 			"https://drive.google.com/file/d/1g5zT2tDFX5Kj8PNWEnu9zk-Gzf6a4P7j/view?usp=drive_link",
 		],
+		folderLink: "https://drive.google.com/drive/folders/1rbNmYJHTfu44G2jjzRQar6NpMzd09B0X?usp=drive_link",
 	},
 	{
 		id: id++,
@@ -112,6 +122,7 @@ const events = [
 			"https://drive.google.com/file/d/1w98p58LjP5xbhYpwo1rrEez_YF36Ovw1/view?usp=drive_link",
 			"https://drive.google.com/file/d/1wcRIu69PgeNsmm5WZ0SaJrtXwgMlQSGl/view?usp=drive_link",
 		],
+		folderLink: "https://drive.google.com/drive/folders/1CML8WnNUKvNEgWotwzMzD-XcIlareBoj?usp=drive_link",
 	},
 	{
 		id: id++,
@@ -121,6 +132,7 @@ const events = [
 			"https://drive.google.com/file/d/1SJ_3YwVd079SRzVxd0KhrFV-zO6VN6rm/view?usp=drive_link",
 			"https://drive.google.com/file/d/1ssk5LhGqa2kfmMiVE3lZTj8IkqZeod9R/view?usp=sharing",
 		],
+		folderLink: "https://drive.google.com/drive/folders/1BuWNvtYYkoMa4rqsXJR6xHVm9WnzaSvt?usp=drive_link",
 	},
 	{
 		id: id++,
@@ -130,6 +142,7 @@ const events = [
 			"https://drive.google.com/file/d/1cWo_Ryhenbx8v740hD2_MseRBx4Q5_dT/view?usp=sharing",
 			"https://drive.google.com/file/d/1K3iSpUgBbTk_xyT1wBiaSPoIRa7EkH-n/view?usp=drive_link",
 		],
+		folderLink: "https://drive.google.com/drive/folders/17bNYQr4bFt5ZS3h6zAmiSemD8HiCfFVh?usp=drive_link",
 	},
 	{
 		id: id++,
@@ -139,6 +152,7 @@ const events = [
 			"https://drive.google.com/file/d/1YmAhqfzAJX6WL0CzvISVxoxbav3eU40G/view?usp=drive_link",
 			"https://drive.google.com/file/d/1Ca0SyMnxQwOU7TBWonbbphGIP2oPWOkT/view?usp=drive_link",
 		],
+		folderLink: "https://drive.google.com/drive/folders/1Ca-htIE_7IxIlyDVqbTAr3FBg2Cvr2Gd?usp=drive_link",
 	},
 	{
 		id: id++,
@@ -148,6 +162,7 @@ const events = [
 			"https://drive.google.com/file/d/1kKeYRRKuNHe1XGQnN04kU_25NsKlgg05/view?usp=drive_link",
 			"https://drive.google.com/file/d/1Y17Vi7btIFc9jh1nxs_OwwBW6ySdSdOB/view?usp=drive_link",
 		],
+		folderLink: "https://drive.google.com/drive/folders/1IGoRrPW4JpzDnbqyjfeZJDHZ_NXdWJap?usp=drive_link",
 	},
 	{
 		id: id++,
@@ -157,6 +172,7 @@ const events = [
 			"https://drive.google.com/file/d/1xok-l7DR7f87PqHzz6OSradvW-sRJi9Z/view?usp=drive_link",
 			"https://drive.google.com/file/d/1Lxp-xB_VXCj_XXiG5xI2DaHjoaoiSpip/view?usp=drive_link",
 		],
+		folderLink: "https://drive.google.com/drive/folders/1oEMZLNYi9f58-uNItwvIWS_PmAToSszX?usp=drive_link",
 	},
 	// jitna chahe utna add kr liyo
 	// aur thoda jldi kr liyo
@@ -165,7 +181,9 @@ const events = [
 const Gallery = () => {
 	return (
 		<div className="gallery-container">
-      
+			<br />
+			<br />
+
 			{events.map((event) => (
 				<div key={event.id} className="gevent-card">
 					<h2 className="event-title">{event.title}</h2>
@@ -183,6 +201,12 @@ const Gallery = () => {
 							/>
 						))}
 					</div>{" "}
+					<button
+						onClick={() => {
+							window.open(event.folderLink);
+						}}>
+						See More
+					</button>
 				</div>
 			))}
 		</div>

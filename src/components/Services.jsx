@@ -4,15 +4,12 @@ import BackgroundImage from "../image/Services.gif";
 import {MdOutlineEventAvailable} from "react-icons/md";
 import {MdFoodBank} from "react-icons/md";
 import {MdEmojiFoodBeverage} from "react-icons/md";
+import {useNavigate} from "react-router-dom";
 
 const Services = () => {
 	const servicesRef = useRef([]);
 
-	useEffect(() => {
-		servicesRef.current.forEach((el, index) => {
-			el.style.animation = `fadeInUp 0.8s ${index * 0.2}s forwards`;
-		});
-	}, []);
+	const navigate = useNavigate();
 
 	return (
 		<div className="services" style={{backgroundImage: `url(${BackgroundImage})`}}>
@@ -20,7 +17,11 @@ const Services = () => {
 				<h3>Available services</h3>
 			</div>
 			<div className="allcards">
-				<div className="services-card">
+				<div
+					className="services-card"
+					onClick={() => {
+						window.open("https://drive.google.com/drive/folders/1tXgzD3muEulNPz7Ap2l8am6t5ssfqhWI?usp=drive_link");
+					}}>
 					<div className="book">
 						<ul>
 							<li>Manpower Requirement</li>
@@ -37,7 +38,11 @@ const Services = () => {
 						</div>
 					</div>
 				</div>
-				<div className="services-card">
+				<div
+					className="services-card"
+					onClick={() => {
+						window.open("https://drive.google.com/drive/folders/1OWG96R31sDYtddKH6jQW7U2lU_OgykO6?usp=sharing");
+					}}>
 					<div className="book">
 						<ul>
 							<li>Hospitality Management</li>
@@ -54,7 +59,11 @@ const Services = () => {
 						</div>
 					</div>
 				</div>
-				<div className="services-card">
+				<div
+					className="services-card"
+					onClick={() => {
+						window.open("https://drive.google.com/drive/folders/1C6TbezJmDzLYpyIwGSmuPiixrVQPh79g?usp=drive_link");
+					}}>
 					<div className="book">
 						<ul>
 							<li>Customized Menu Planning</li>
