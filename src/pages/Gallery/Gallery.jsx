@@ -137,6 +137,16 @@ const events = [
 	},
 	{
 		id: id++,
+		title: "India Integrated Transport and Logistics Summit 2017",
+		photoLink: [
+			"https://drive.google.com/file/d/1dQGNXYnGfSDZtWcK5gs9pkVNDph6FM_1/view?usp=sharing",
+			"https://drive.google.com/file/d/1QbuFNp9jRh1l8-hyfBeZUM1n78VauPX2/view?usp=drive_link",
+			"https://drive.google.com/file/d/1fQ8KQjVH36LjttfX-3d0OrLhgy_WpkBT/view?usp=drive_link",
+		],
+		folderLink: "https://drive.google.com/drive/folders/1-1dj-X_k0LQyUDItjqSB-MTk3peH7c5x?usp=sharing",
+	},
+	{
+		id: id++,
 		title: "Kyrgyz Health Summit 2017",
 		photoLink: [
 			"https://drive.google.com/file/d/1fWse-_Ep2QMl-7e2wj5snKlmvu7RnQx8/view?usp=sharing",
@@ -176,16 +186,7 @@ const events = [
 		],
 		folderLink: "https://drive.google.com/drive/folders/1oEMZLNYi9f58-uNItwvIWS_PmAToSszX?usp=drive_link",
 	},
-	{
-		id: id++,
-		title: "India Integrated Transport and Logistics Summit 2017",
-		photoLink: [
-			"https://drive.google.com/file/d/1dQGNXYnGfSDZtWcK5gs9pkVNDph6FM_1/view?usp=sharing",
-			"https://drive.google.com/file/d/1QbuFNp9jRh1l8-hyfBeZUM1n78VauPX2/view?usp=drive_link",
-			"https://drive.google.com/file/d/1fQ8KQjVH36LjttfX-3d0OrLhgy_WpkBT/view?usp=drive_link",
-		],
-		folderLink: "https://drive.google.com/drive/folders/1-1dj-X_k0LQyUDItjqSB-MTk3peH7c5x?usp=sharing",
-	},
+
 	// jitna chahe utna add kr liyo
 	// aur thoda jldi kr liyo
 ];

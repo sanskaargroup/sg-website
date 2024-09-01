@@ -4,6 +4,7 @@ import BackgroundImage1 from '../image/animate.gif';
 import team1 from '../image/logo/team1.png'; 
 import "./Team.css"
 import D1 from "../image/D1.jpg"
+import sanya from '../image/logo/sanya.jpeg'
 import { LuInstagram } from "react-icons/lu";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaSquareXTwitter } from "react-icons/fa6";
@@ -34,7 +35,7 @@ const teamMembers = [
   {
     name: 'Sanya Chopra',
     title: 'HEAD ADMINISTRATION',
-    image: D1,
+    image: sanya,
     social: {
       facebook: '#',
       linkedin: 'https://www.linkedin.com/in/adv-sanya-chopra-b8132a229/',
