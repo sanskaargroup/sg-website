@@ -183,7 +183,7 @@ const EnquiryForm = () => {
 				<br />
 				<p  style={{ }}>
 				Wanna join our team....
-				<Link to="/careers" style={{ color: "green", textDecoration: "none" }}>
+				<Link to="/careers" style={{ color: "green", textDecoration: "none",fontSize:"1.1rem" }}>
 					Join us
 				</Link>
 				</p>

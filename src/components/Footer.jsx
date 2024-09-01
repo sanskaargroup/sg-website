@@ -103,7 +103,7 @@ const Footer = () => {
 							<div className="social">
           					  <a href={'https://www.instagram.com/sanskaargroup/?utm_source=qr'} target="_blank" rel="noopener noreferrer"><LuInstagram /></a>
           					  <a href={'https://www.linkedin.com/company/sanakaar-group/'} target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-          					  <a href={''} target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
+          					  <a href={'https://www.facebook.com/sanskaargroup/'} target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
           					</div>
 						</div>
 					</div>
