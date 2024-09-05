@@ -137,7 +137,9 @@ const CorporateEvents = () => {
 							<img src={image3} alt="" />
 							<img src={image6} alt="" />
 						</div>
-						<button>
+						<button onClick={() => {
+							window.open("https://drive.google.com/drive/folders/1O_nqTlg1auvXx6gTNnPCXxMo9SS9-Lm7?usp=drive_link");
+						}}>
 							<span className="shadow"></span>
 							<span className="edge"></span>
 							<span className="front text"> See more</span>
