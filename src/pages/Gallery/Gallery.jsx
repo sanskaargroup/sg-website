@@ -26,6 +26,16 @@ let id = 1;
 const events = [
 	{
 		id: id++,
+		title: "World Food India 2024",
+		photoLink: [
+			"https://drive.google.com/file/d/17E7mjET17JHX2i7Xv94X-ctxplAGy07z/view?usp=sharing",
+			"https://drive.google.com/file/d/1Ndb1BXt9iB1WARSJKtwwQZEuCBPQcF7k/view?usp=sharing",
+			"https://drive.google.com/file/d/1cZ5YC-zqQwI8EwXmOuXIrPY2QsQbhjKT/view?usp=sharing",
+		],
+		folderLink: "https://drive.google.com/drive/folders/1e2H92eJiR2p6qX4WWByvOsojy7WWgzUC?usp=sharing",
+	},
+	{
+		id: id++,
 		title: "StoneMart Jaipur 2024",
 		photoLink: [
 			"https://drive.google.com/file/d/1zojdqN6arlFAwozGmOjLQ8fnY6tNNoUL/view?usp=sharing",

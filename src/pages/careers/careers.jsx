@@ -19,7 +19,7 @@ const Careers = () => {
       <div className='contractual' style={{width: "98%" , height:"3rem" ,fontSize:"7px" ,backgroundColor:"white",display:"flex",
         justifyContent:"center",alignItems:"center",margin:"3em"}}>
         <p  style={{fontSize:"2.5em" }}>
-          Wanna join our team on contractual basis....
+        Ready to collaborate with us on a contract basis....?
           <a style={{ color:"green", textDecoration:"none" }} href="https://docs.google.com/forms/d/e/1FAIpQLSfGl8sVX4f7C-hZnglDJOVp8htpZwmKPh8OyQmFJ5STRH4l0w/viewform?usp=sf_link">Join now</a>
         </p>
       </div>
