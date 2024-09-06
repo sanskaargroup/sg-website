@@ -13,6 +13,7 @@ app.use(express.json());
 app.use(cors());
 
 const port = process.env.PORT || 5000;
+const connectionURL = process.env.MONGODB_URL;
 //TODO: ADD DATE TO SCHEMA TO EXTRACT DATEWISE DATA
 
 const ADMINSECRET = process.env.ADMINSECRET;
@@ -188,7 +189,8 @@ app.get("/enquirydata", async (req, res) => {
 
 mongoose.connect(
 	// <insert mongodb link here>
-	"mongodb://127.0.0.1:27017/sanskaar-enquiry-form",
+	// "mongodb://127.0.0.1:27017/sanskaar-enquiry-form",
+	connectionURL,
 );
 app.listen(port, () => {
 	console.log(`server is now running on http://localhost:${port}`);

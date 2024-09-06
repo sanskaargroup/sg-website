@@ -1,9 +1,9 @@
 import "./Footer.css";
 import logo from "../image/logo.png";
 import {Link} from "react-router-dom";
-import { LuInstagram } from "react-icons/lu";
-import { FaLinkedin } from "react-icons/fa6";
-import { FaFacebook } from "react-icons/fa";
+import {LuInstagram} from "react-icons/lu";
+import {FaLinkedin} from "react-icons/fa6";
+import {FaFacebook} from "react-icons/fa";
 
 const Footer = () => {
 	return (
@@ -97,14 +97,23 @@ const Footer = () => {
 							<div className="foot-phone">
 								<phone />
 								<p>
-									<a href="tel:+919999482332">+91 9810169720</a>
+									<a href="tel:+919999482332">+91 9810169720sr</a>
 								</p>
 							</div>
 							<div className="social">
-          					  <a href={'https://www.instagram.com/sanskaargroup/?utm_source=qr'} target="_blank" rel="noopener noreferrer"><LuInstagram /></a>
-          					  <a href={'https://www.linkedin.com/company/sanakaar-group/'} target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-          					  <a href={'https://www.facebook.com/sanskaargroup/'} target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
-          					</div>
+								<a
+									href={"https://www.instagram.com/sanskaargroup/?utm_source=qr"}
+									target="_blank"
+									rel="noopener noreferrer">
+									<LuInstagram />
+								</a>
+								<a href={"https://www.linkedin.com/company/sanakaar-group/"} target="_blank" rel="noopener noreferrer">
+									<FaLinkedin />
+								</a>
+								<a href={"https://www.facebook.com/sanskaargroup/"} target="_blank" rel="noopener noreferrer">
+									<FaFacebook />
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
