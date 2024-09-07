@@ -1,16 +1,27 @@
 import cors from "cors";
+import path from "path";
 import dotenv from "dotenv";
 import express from "express";
 import jwt from "jsonwebtoken";
 import mongoose from "mongoose";
 import {Career, Enquiry, Owner} from "./db/db.js";
 import {oneDayAgo, oneMonthAgo, oneWeekAgo, sixMonthsAgo, threeMonthsAgo} from "./utils/date.js";
+import {fileURLToPath} from "url";
+import {dirname} from "path";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 dotenv.config({path: "../.env"});
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+// app.use(cors());
+
+app.use(express.static("public"));
+app.use("/*", (req, res) => {
+	res.sendFile(path.join(__dirname, "/public/index.html"));
+});
 
 const port = process.env.PORT || 5000;
 const connectionURL = process.env.MONGODB_URL;
