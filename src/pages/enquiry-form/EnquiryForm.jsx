@@ -6,6 +6,7 @@ import { enquiryFormSchema } from "../../utils/schema.ts";
 import "./EnquiryForm.css";
 
 const port = import.meta.env.VITE_PORT;
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 const EnquiryForm = () => {
 	const [formData, setFormData] = useState({
