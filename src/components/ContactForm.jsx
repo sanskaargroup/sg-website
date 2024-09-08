@@ -6,6 +6,7 @@ import {enquiryFormSchema} from "../utils/schema";
 import "./ContactForm.css";
 
 const port = import.meta.env.VITE_PORT;
+const BASE_URL = process.env.VITE_BASE_URL || "";
 
 const ContactForm = () => {
 	const [formData, setFormData] = useState({
@@ -50,7 +51,7 @@ const ContactForm = () => {
 				setFormErrors(formErrors);
 			} else {
 				setFormErrors(null);
-				const response = await fetch(`http://localhost:${port}/api/enquire`, {
+				const response = await fetch(`${BASE_URL}/api/enquire`, {
 					method: "POST",
 					headers: {
 						"Content-Type": "application/json",

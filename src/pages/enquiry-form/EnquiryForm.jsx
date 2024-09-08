@@ -49,7 +49,7 @@ const EnquiryForm = () => {
 				setFormErrors(formErrors);
 			} else {
 				setFormErrors(null);
-				const response = await fetch(`http://localhost:${port}/api/enquire`, {
+				const response = await fetch(`${BASE_URL}/api/enquire`, {
 					method: "POST",
 					headers: {
 						"Content-Type": "application/json",
