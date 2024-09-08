@@ -1,13 +1,14 @@
-import cors from "cors";
-import path from "path";
+// import cors from "cors";
 import dotenv from "dotenv";
 import express from "express";
 import jwt from "jsonwebtoken";
 import mongoose from "mongoose";
-import {Career, Enquiry, Owner} from "./db/db.js";
-import {oneDayAgo, oneMonthAgo, oneWeekAgo, sixMonthsAgo, threeMonthsAgo} from "./utils/date.js";
-import {fileURLToPath} from "url";
-import {dirname} from "path";
+import path, { dirname } from "path";
+import { fileURLToPath } from "url";
+import { Career, Enquiry, Owner } from "./db/db.js";
+import { oneDayAgo, oneMonthAgo, oneWeekAgo, sixMonthsAgo, threeMonthsAgo } from "./utils/date.js";
+// import bodyParser from "body-parser"; 
+import compression from "compression";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -15,13 +16,10 @@ const __dirname = dirname(__filename);
 dotenv.config({path: "../.env"});
 
 const app = express();
+// app.use(bodyParser.json());
 app.use(express.json());
-app.use(cors());
-
-app.use(express.static("public"));
-app.use("/*", (req, res) => {
-	res.sendFile(path.join(__dirname, "/public/index.html"));
-});
+// app.use(cors());
+app.use(compression());
 
 const port = process.env.PORT || 5000;
 const connectionURL = process.env.MONGODB_URL;
@@ -29,7 +27,7 @@ const connectionURL = process.env.MONGODB_URL;
 
 const ADMINSECRET = process.env.ADMINSECRET;
 
-app.post("/createowner", async (req, res) => {
+app.post("/api/createowner", async (req, res) => {
 	try {
 		console.log("req.body: ", req.body);
 		const username = req.body.username;
@@ -48,7 +46,7 @@ app.post("/createowner", async (req, res) => {
 	}
 });
 
-app.post("/signin", async (req, res) => {
+app.post("/api/signin", async (req, res) => {
 	try {
 		console.log("req.body: ", req.body);
 		const formData = req.body;
@@ -76,7 +74,7 @@ app.post("/signin", async (req, res) => {
 });
 
 // to create a new enquiry
-app.post("/enquire", async (req, res) => {
+app.post("/api/enquire", async (req, res) => {
 	try {
 		console.log("req.body: ", req.body);
 		if (!req.body) {
@@ -93,7 +91,7 @@ app.post("/enquire", async (req, res) => {
 });
 
 // to create a new career application
-app.post("/career", async (req, res) => {
+app.post("/api/career", async (req, res) => {
 	try {
 		console.log("req.body: ", req.body);
 		if (!req.body) {
@@ -120,7 +118,7 @@ app.post("/career", async (req, res) => {
 // 	}
 // });
 
-app.get("/enquirydata", async (req, res) => {
+app.get("/api/enquirydata", async (req, res) => {
 	try {
 		console.log("req.query: ", req.query);
 		const {profile, time} = req.query;
@@ -205,4 +203,9 @@ mongoose.connect(
 );
 app.listen(port, () => {
 	console.log(`server is now running on http://localhost:${port}`);
+});
+
+app.use(express.static("public"));
+app.use("/*", (req, res) => {
+	res.sendFile(path.join(__dirname, "/public/index.html"));
 });

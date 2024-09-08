@@ -50,7 +50,7 @@ const ContactForm = () => {
 				setFormErrors(formErrors);
 			} else {
 				setFormErrors(null);
-				const response = await fetch(`http://localhost:${port}/enquire`, {
+				const response = await fetch(`http://localhost:${port}/api/enquire`, {
 					method: "POST",
 					headers: {
 						"Content-Type": "application/json",

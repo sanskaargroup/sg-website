@@ -28,7 +28,7 @@ const Owner = () => {
 
 		try {
 			// Construct the URL with both query parameters
-			const response = await fetch(`${BASE_URL}/enquirydata?time=${selectedTime}&profile=${selectedProfile}`);
+			const response = await fetch(`${BASE_URL}/api/enquirydata?time=${selectedTime}&profile=${selectedProfile}`);
 			const result = await response.json();
 
 			if (response.ok) {

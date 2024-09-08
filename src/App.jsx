@@ -48,7 +48,7 @@ export default function App() {
 					<Route path="/Blog" element={<Blog />} />
 					<Route path="/ContactUs" element={<Contact />} />
 					<Route path="/careers" element={<Careers />} />
-					<Route path="/signin" element={<Signin />} />
+					{/* <Route path="/signin" element={<Signin />} /> */}
 
 					{/* <Route path="/owner" element={<PrivateRoute component={Owner} />} /> */}
 					<Route path="/owner" element={<Owner />} />

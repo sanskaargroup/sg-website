@@ -55,7 +55,7 @@ const CareersForm = () => {
 			} else {
 				setFormErrors(null);
 				console.log("sending data to server");
-				const response = await fetch(`${base_url}/career`, {
+				const response = await fetch(`${base_url}/api/career`, {
 					method: "POST",
 					headers: {
 						"Content-Type": "application/json",
