@@ -18,7 +18,7 @@ const teamMembers = [
       facebook: '#',
       linkedin: '#',
       instagram: '#',
-      profile: ''
+      profile: '#'
     }
   },
   {
@@ -40,7 +40,7 @@ const teamMembers = [
       facebook: '#',
       linkedin: 'https://www.linkedin.com/in/adv-sanya-chopra-b8132a229/',
       instagram: 'https://www.instagram.com/sa_nya7216/',
-      profile: ''
+      profile: 'https://www.linkedin.com/in/adv-sanya-chopra-b8132a229/'
     }
   }
 ];
