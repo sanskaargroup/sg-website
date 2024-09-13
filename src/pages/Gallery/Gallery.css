@@ -1,59 +1,102 @@
+/* Base styles for desktop - no change */
 .gallery-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20zpx;
-    justify-content: center;
-    padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Fixed typo (was 20zpx) */
+  justify-content: center;
+  padding: 20px;
+}
+
+.gevent-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 80%; /* Keep desktop width as it is */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.event-title {
+  font-size: 1.5rem;
+  margin: 16px 0;
+}
+
+.event-photos iframe {
+  height: 15rem;
+  width: 20rem;
+}
+
+.event-photos {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+.event-photo {
+  width: 5px;
+  height: 5px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.see-more-button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.see-more-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive adjustments for tablets and smaller devices */
+@media (max-width: 768px) {
+  /* Stack event cards for smaller screens */
+  .gallery-container {
+    flex-direction: column;
+    padding: 10px;
   }
-  
+
+  /* Adjust card width for tablets and phones */
   .gevent-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 80%;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .event-title {
-    font-size: 1.5rem;
-    margin: 16px 0;
-  }
-  .event-photos iframe {
-    height: 15rem;
-    width: 20rem;
+    width: 90%; /* Slightly reduce the card width on smaller screens */
   }
 
   .event-photos {
-    display: flex;
-    justify-content: space-between;
-    padding: 25px;
+    flex-direction: column; /* Stack photos vertically on smaller screens */
+    align-items: center;
   }
-  
+
   .event-photo {
-    width: 5px;
-    height: 5px;
-    object-fit: cover;
-    border-radius: 8px;
+    width: 100%; /* Make images take full width */
+    max-width: 120px;
+    height: auto;
   }
-  
+}
+
+@media (max-width: 480px) {
+  /* Further reduce card size for mobile */
+  .gevent-card {
+    width: 100%;
+  }
+
+  .event-title {
+    font-size: 1.25rem; /* Adjust title size for mobile */
+  }
+
+  /* Make button more compact on small devices */
   .see-more-button {
-    background-color: #007bff;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 10px 0;
-    border-radius: 8px;
-    cursor: pointer;
+    padding: 8px 16px;
+    font-size: 14px;
   }
-  
-  .see-more-button:hover {
-    background-color: #0056b3;
-  }
-  
+}
