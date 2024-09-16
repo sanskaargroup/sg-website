@@ -4,7 +4,7 @@ import autoTable from "jspdf-autotable";
 
 const Owner = () => {
 	const BASE_URL = import.meta.env.VITE_BASE_URL || "http://localhost:5000"; // Replace with your actual backend URL
-	console.log("BASE_URL: ", BASE_URL);
+	console.log("BASE_URL in owner page: ", BASE_URL);
 
 	const [selectedTime, setSelectedTime] = useState("");
 	const [selectedProfile, setSelectedProfile] = useState(""); // New state for profile
