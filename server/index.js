@@ -13,8 +13,8 @@ import compression from "compression";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-dotenv.config({path: "../.env"});
-
+// dotenv.config({path: "../.env"});
+dotenv.config();
 const app = express();
 // app.use(bodyParser.json());
 app.use(express.json());
