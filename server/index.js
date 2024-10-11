@@ -3,11 +3,11 @@ import dotenv from "dotenv";
 import express from "express";
 import jwt from "jsonwebtoken";
 import mongoose from "mongoose";
-import path, { dirname } from "path";
+import { dirname } from "path";
 import { fileURLToPath } from "url";
 import { Career, Enquiry, Owner } from "./db/db.js";
 import { oneDayAgo, oneMonthAgo, oneWeekAgo, sixMonthsAgo, threeMonthsAgo } from "./utils/date.js";
-// import bodyParser from "body-parser"; 
+// import bodyParser from "body-parser";
 import compression from "compression";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -204,9 +204,4 @@ mongoose.connect(
 );
 app.listen(port, () => {
 	console.log(`server is now running on http://localhost:${port}`);
-});
-
-app.use(express.static("public"));
-app.use("/*", (req, res) => {
-	res.sendFile(path.join(__dirname, "/public/index.html"));
 });
