@@ -1,4 +1,4 @@
-// import cors from "cors";
+import cors from "cors";
 import dotenv from "dotenv";
 import express from "express";
 import jwt from "jsonwebtoken";
@@ -13,15 +13,16 @@ import compression from "compression";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-dotenv.config({path: "../.env"});
-
+// dotenv.config({path: "../.env"});
+dotenv.config();
 const app = express();
 // app.use(bodyParser.json());
 app.use(express.json());
-// app.use(cors());
+app.use(cors());
 app.use(compression());
 
 const port = process.env.PORT || 5000;
+console.log("port: ", port);
 const connectionURL = process.env.MONGODB_URL;
 //TODO: ADD DATE TO SCHEMA TO EXTRACT DATEWISE DATA
 
