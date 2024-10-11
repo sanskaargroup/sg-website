@@ -1,8 +1,8 @@
-/* Base styles for desktop - no change */
+
 .gallery-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* Fixed typo (was 20zpx) */
+  gap: 20px;
   justify-content: center;
   padding: 20px;
 }
@@ -13,7 +13,7 @@
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width: 80%; /* Keep desktop width as it is */
+  width: 80%; 
   margin-bottom: 20px;
   text-align: center;
 }
@@ -59,42 +59,42 @@
   background-color: #0056b3;
 }
 
-/* Responsive adjustments for tablets and smaller devices */
+
 @media (max-width: 768px) {
-  /* Stack event cards for smaller screens */
+
   .gallery-container {
     flex-direction: column;
     padding: 10px;
   }
 
-  /* Adjust card width for tablets and phones */
+
   .gevent-card {
-    width: 90%; /* Slightly reduce the card width on smaller screens */
+    width: 90%; 
   }
 
   .event-photos {
-    flex-direction: column; /* Stack photos vertically on smaller screens */
+    flex-direction: column; 
     align-items: center;
   }
 
   .event-photo {
-    width: 100%; /* Make images take full width */
+    width: 100%;
     max-width: 120px;
     height: auto;
   }
 }
 
 @media (max-width: 480px) {
-  /* Further reduce card size for mobile */
+ 
   .gevent-card {
     width: 100%;
   }
 
   .event-title {
-    font-size: 1.25rem; /* Adjust title size for mobile */
+    font-size: 1.25rem; 
   }
 
-  /* Make button more compact on small devices */
+
   .see-more-button {
     padding: 8px 16px;
     font-size: 14px;
