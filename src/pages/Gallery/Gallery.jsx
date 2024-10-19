@@ -26,7 +26,7 @@ let id = 1;
 const events = [
 	{
 		id: id++,
-		title: "World Food India 2024",
+		title: "World Food India 2023",
 		photoLink: [
 			"https://drive.google.com/file/d/17E7mjET17JHX2i7Xv94X-ctxplAGy07z/view?usp=sharing",
 			"https://drive.google.com/file/d/1Ndb1BXt9iB1WARSJKtwwQZEuCBPQcF7k/view?usp=sharing",
