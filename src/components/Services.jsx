@@ -1,10 +1,8 @@
-import { useEffect, useRef } from 'react';
-import './Services.css';
-import BackgroundImage from '../image/Services.gif';
-import { MdOutlineEventAvailable } from 'react-icons/md';
-import { MdFoodBank } from 'react-icons/md';
-import { MdEmojiFoodBeverage } from 'react-icons/md';
+import { useRef } from 'react';
+import { MdEmojiFoodBeverage, MdFoodBank, MdOutlineEventAvailable } from 'react-icons/md';
 import { useNavigate } from 'react-router-dom';
+import BackgroundImage from '../image/Services.gif';
+import './Services.css';
 
 const Services = () => {
     const servicesRef = useRef([]);

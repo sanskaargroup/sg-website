@@ -1,11 +1,11 @@
 import { FaChevronDown } from 'react-icons/fa';
 import { TfiLineDotted } from 'react-icons/tfi';
-import './About.css';
 import P1 from '../image/P1.jpg';
 import P2 from '../image/P2.jpg';
 import P3 from '../image/P3.jpg';
 import P4 from '../image/P4.jpg';
 import P5 from '../image/P5.jpg';
+import './About.css';
 const About = () => {
     return (
         <div>

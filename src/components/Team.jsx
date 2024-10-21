@@ -1,15 +1,12 @@
-import { FaChevronDown } from 'react-icons/fa';
+import { FaChevronDown, FaFacebook } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa6';
+import { LuInstagram } from 'react-icons/lu';
 import BackgroundImage from '../image/T5.jpg';
 import BackgroundImage1 from '../image/animate.gif';
+import Gauransh from '../image/logo/Gauransh.jpeg';
+import sanya from '../image/logo/sanya.jpeg';
 import team1 from '../image/logo/team1.png';
 import './Team.css';
-import D1 from '../image/D1.jpg';
-import sanya from '../image/logo/sanya.jpeg';
-import Gauransh from '../image/logo/Gauransh.jpeg';
-import { LuInstagram } from 'react-icons/lu';
-import { FaLinkedin } from 'react-icons/fa6';
-import { FaSquareXTwitter } from 'react-icons/fa6';
-import { FaFacebook } from 'react-icons/fa';
 const teamMembers = [
     {
         name: 'Gauransh Chopra',

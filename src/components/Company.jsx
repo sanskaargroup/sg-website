@@ -1,7 +1,6 @@
 import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './Company.css';
+import 'slick-carousel/slick/slick.css';
 import logo1 from '../image/logo/ficci.png';
 import logo2 from '../image/logo/logo2.png';
 import logo3 from '../image/logo/logo3.png';
@@ -11,6 +10,7 @@ import logo6 from '../image/logo/logo6.png';
 import logo7 from '../image/logo/logo7.png';
 import logo8 from '../image/logo/logo8.png';
 import logo9 from '../image/logo/logo9.png';
+import './Company.css';
 
 const LogoSlider = () => {
     const settings = {

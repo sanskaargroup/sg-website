@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
-import './Thought.css';
 import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
+import './Thought.css';
 
 const Thought = () => {
     const containerRef = useRef(null);

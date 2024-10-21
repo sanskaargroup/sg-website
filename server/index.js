@@ -1,3 +1,4 @@
+import compression from "compression";
 import cors from "cors";
 import dotenv from "dotenv";
 import express from "express";
@@ -7,8 +8,6 @@ import { dirname } from "path";
 import { fileURLToPath } from "url";
 import { Career, Enquiry, Owner } from "./db/db.js";
 import { oneDayAgo, oneMonthAgo, oneWeekAgo, sixMonthsAgo, threeMonthsAgo } from "./utils/date.js";
-// import bodyParser from "body-parser";
-import compression from "compression";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -16,7 +15,6 @@ const __dirname = dirname(__filename);
 // dotenv.config({path: "../.env"});
 dotenv.config();
 const app = express();
-// app.use(bodyParser.json());
 app.use(express.json());
 app.use(cors());
 app.use(compression());
@@ -187,10 +185,6 @@ app.get("/api/enquirydata", async (req, res) => {
 		} else {
 			res.status(404).json({message: "profile not found"});
 		}
-		// const enquiries = await Enquiry.find({timestamp: {$gte: entryTime}});
-		// console.log("enquiries: ", enquiries);
-		// res.status(200).json({data: enquiries});
-		// res.status(200).json({message: "params recieved"});
 	} catch (e) {
 		console.log("error: ", e);
 		res.status(400).json({message: "error in GET route"});
@@ -198,8 +192,6 @@ app.get("/api/enquirydata", async (req, res) => {
 });
 
 mongoose.connect(
-	// <insert mongodb link here>
-	// "mongodb://127.0.0.1:27017/sanskaar-enquiry-form",
 	connectionURL,
 );
 app.listen(port, () => {

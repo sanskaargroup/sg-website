@@ -1,6 +1,6 @@
-import './Touch.css';
-import BackgroundImage from '../image/T2.jpg';
 import { useNavigate } from 'react-router-dom';
+import BackgroundImage from '../image/T2.jpg';
+import './Touch.css';
 const Touch = () => {
     const navigate = useNavigate();
     return (
