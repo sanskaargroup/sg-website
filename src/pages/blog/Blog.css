@@ -1,13 +1,12 @@
-
 .blog-page {
     padding: 30px;
-  }
-  
-  .blog-list {
+}
+
+.blog-list {
     gap: 20px;
-  }
-  
-  .blog-card {
+}
+
+.blog-card {
     display: flex;
     cursor: pointer;
     border: 1px solid #cfcfcf;
@@ -15,74 +14,73 @@
     border-radius: 5px;
     width: 80%;
     height: 13rem;
-  }
-  
-  .blog-card img {
+}
+
+.blog-card img {
     width: 50%;
     height: auto;
     border-radius: 3px;
-  }
+}
 
-  
-  .full-blog {
+.full-blog {
     text-align: center;
-  }
-  
-  .full-blog img {
+}
+
+.full-blog img {
     width: 80%;
     height: auto;
     max-width: 600px;
     margin: 0 auto;
     border-radius: 5px;
-  }
-  .blog-temp{
+}
+.blog-temp {
     background-color: #ffffff;
-  }
-  
-  button {
+}
+
+button {
     display: inline-block;
     margin-bottom: 20px;
     padding: 10px 20px;
-    background-color: #508D4E;
+    background-color: #508d4e;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background-color: #3a7a25;
-  }
-  
-  .pagination {
+}
+
+.pagination {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-  }
-  
-  .pagination button {
+}
+
+.pagination button {
     margin: 0 5px;
     padding: 10px 20px;
     border: none;
     background-color: #55b236;
     color: white;
     cursor: pointer;
-  }
-  
-  .pagination button:disabled {
+}
+
+.pagination button:disabled {
     background-color: #ccc;
     cursor: not-allowed;
-  }
-  
-  @media (max-width: 576px) {
+}
+
+@media (max-width: 576px) {
     .blog-page {
         padding: 15px;
     }
-    
+
     .blog-list {
         gap: 10px;
     }
-    
+
     .blog-card {
         display: block;
         cursor: pointer;
@@ -94,7 +92,7 @@
         box-sizing: border-box;
         margin-bottom: 15px;
     }
-    
+
     .blog-card img {
         width: 100%;
         height: auto;
@@ -113,7 +111,7 @@
         display: inline-block;
         margin-bottom: 15px;
         padding: 8px 16px;
-        background-color: #508D4E;
+        background-color: #508d4e;
         color: white;
         border: none;
         border-radius: 5px;

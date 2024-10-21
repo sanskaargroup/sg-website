@@ -7,52 +7,53 @@
     height: 30vh;
     width: 80vw;
     position: relative;
-    margin: 40px auto; 
-    
-  }
-  
-  .thought-text {
+    margin: 40px auto;
+}
+
+.thought-text {
     width: 60rem;
     font-size: 1.5rem;
     text-align: center;
     color: #555;
     font-style: italic;
-    font-family: "Playwrite PE", cursive;
+    font-family: 'Playwrite PE', cursive;
     font-optical-sizing: auto;
     font-weight: 450;
-  }
-  
-  .quote-icon {
+}
+
+.quote-icon {
     font-size: 2rem;
     color: #555;
     position: absolute;
     opacity: 0;
-    transition: opacity 2s ease-in-out, transform 2s ease-in-out;
-  }
-  
-  .left {
+    transition:
+        opacity 2s ease-in-out,
+        transform 2s ease-in-out;
+}
+
+.left {
     left: -60px;
     margin-bottom: 3em;
-  }
-  
-  .right {
+}
+
+.right {
     right: -60px;
     margin-top: 3em;
-  }
-  
-  .thought-container.animate .quote-icon {
+}
+
+.thought-container.animate .quote-icon {
     opacity: 1;
-  }
-  
-  .thought-container.animate .left {
+}
+
+.thought-container.animate .left {
     transform: translateX(50px);
-  }
-  
-  .thought-container.animate .right {
+}
+
+.thought-container.animate .right {
     transform: translateX(-50px);
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .thought-container {
         height: auto;
         width: 90vw;

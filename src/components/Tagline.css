@@ -3,9 +3,9 @@
     position: relative;
     height: 40vh;
     overflow: hidden;
-  }
-  
-  .background-video {
+}
+
+.background-video {
     position: absolute;
     top: 0;
     left: 0;
@@ -13,9 +13,9 @@
     height: 100%;
     object-fit: cover;
     z-index: -1;
-  }
-  
-  .enjoy {
+}
+
+.enjoy {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -27,38 +27,35 @@
     align-items: center;
     color: white;
     z-index: 1;
-  }
-  
-  .enjoy h1 {
+}
+
+.enjoy h1 {
     font-size: 2.5rem;
     font-weight: bold;
     color: white;
-    font-family: "Cinzel",serif;
-  }
-  
-  .enjoy p {
+    font-family: 'Cinzel', serif;
+}
+
+.enjoy p {
     font-size: 1rem;
     color: rgb(255, 255, 255);
-  }
-  
-  @media (max-width: 576px) {
-    .tagline-container {
-      height: 30vh;
-      
-    }
-  
-    .enjoy h1 {
-      font-size: 1.5rem;
-      text-align: center;
+}
 
+@media (max-width: 576px) {
+    .tagline-container {
+        height: 30vh;
     }
-    .enjoy{
-      width: 95%;
-      
+
+    .enjoy h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .enjoy {
+        width: 95%;
     }
     .enjoy p {
-      font-size: 0.8rem;
-      width: 80%;
-      text-align: center;
+        font-size: 0.8rem;
+        width: 80%;
+        text-align: center;
     }
-  }
+}

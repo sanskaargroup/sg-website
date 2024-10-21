@@ -1,18 +1,18 @@
-.image img{
+.image img {
     width: 850px;
     height: 200px;
     margin-left: 13rem;
     margin-top: 3rem;
 }
-.Form{
+.Form {
     height: auto;
 }
-.para{
+.para {
     margin-left: 24rem;
 }
 
 @media (max-width: 576px) {
-    .image img{
+    .image img {
         width: 100%;
         height: auto;
         margin-left: 0;

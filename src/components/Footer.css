@@ -1,162 +1,157 @@
-  .footer {
-    background-color: rgb(40, 40, 40);  
-  }
-  .footer-container{
+.footer {
+    background-color: rgb(40, 40, 40);
+}
+.footer-container {
     display: flex;
     justify-content: space-evenly;
     justify-content: space-between;
     justify-items: center;
-    padding:  6rem 6rem 5rem 6rem;
+    padding: 6rem 6rem 5rem 6rem;
     gap: 6rem;
     text-align: justify;
-    
-  }
-  .footer-container h3{
+}
+.footer-container h3 {
     color: white;
-  }
-  .footer-container p{
+}
+.footer-container p {
     color: rgb(173, 171, 171);
-  }
-  .footer-end{
+}
+.footer-end {
     background-color: black;
     height: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
-
-  }
-  .footer-end b {
+}
+.footer-end b {
     color: rgb(62, 147, 62);
-  }
-  .footer-about{
+}
+.footer-about {
     width: 18rem;
-  }
-  .footer-about img{
+}
+.footer-about img {
     margin-top: 2rem;
     margin-bottom: 1rem;
-  }
-  .footer-recent-post{
+}
+.footer-recent-post {
     width: 15rem;
-  }
-  .footer-recent-post ul{
+}
+.footer-recent-post ul {
     color: rgb(181, 181, 181);
     margin-top: 4rem;
     cursor: pointer;
-  }
-  .footer-recent-post li:hover{
+}
+.footer-recent-post li:hover {
     color: rgb(98, 172, 73);
-  }
-  .footer-navi{
+}
+.footer-navi {
     width: 15rem;
-
-  }
-  .footer-navi ul {
+}
+.footer-navi ul {
     list-style-type: none;
     padding: 0;
     margin-top: 4rem;
-  }
-  
-  .footer-navi ul li {
+}
+
+.footer-navi ul li {
     margin: 5px 0;
-  }
-  
-  .footer-navi ul li a {
+}
+
+.footer-navi ul li a {
     color: rgb(199, 199, 199);
     text-decoration: none;
     font-size: 1em;
-  }
-  
-  .footer-navi ul li a:hover {
-    color: rgb(98, 172, 73); 
-  }
-  
-  .footer-navi ul li.contact a {
-    font-weight: bold; 
-  }
-  .foot-cont {
-    margin-top: 1rem;
-  }
-  .foot-mail p{
-    text-decoration: none;
+}
 
-  }
+.footer-navi ul li a:hover {
+    color: rgb(98, 172, 73);
+}
+
+.footer-navi ul li.contact a {
+    font-weight: bold;
+}
+.foot-cont {
+    margin-top: 1rem;
+}
+.foot-mail p {
+    text-decoration: none;
+}
 
 .footer-navi ul,
 .foot-mail,
 .foot-phone {
-  list-style-type: none;
-  padding: 0;
-  
+    list-style-type: none;
+    padding: 0;
 }
-.footer-navi ul{
-  margin-top: 3.5rem;
+.footer-navi ul {
+    margin-top: 3.5rem;
 }
 
 .footer-navi ul li,
 .foot-mail p,
 .foot-phone p {
-  margin: 5px 0; 
+    margin: 5px 0;
 }
 
 .footer-navi ul li a,
 .foot-mail p a,
 .foot-phone p a {
-  color: white;
-  text-decoration: none;
-  font-size: 1em; 
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
 }
 
 .footer-navi ul li a:hover,
 .foot-mail p a:hover,
 .foot-phone p a:hover {
-  color:  #80AF81; 
+    color: #80af81;
 }
 
 .footer-navi ul li.contact a {
-  font-weight: bold; 
+    font-weight: bold;
 }
-.foot-us{
-  margin-top: 3rem;
+.foot-us {
+    margin-top: 3rem;
 }
 .social a {
-  margin: 0 5px;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 20px;
-  transition: color 0.3s;
+    margin: 0 5px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
 }
 
 .social a:hover {
-  color: #15872e;
+    color: #15872e;
 }
 @media (max-width: 768px) {
-  .footer-container {
-      flex-direction: column;
-      padding: 3rem;
-      gap: 3rem;
-  }
+    .footer-container {
+        flex-direction: column;
+        padding: 3rem;
+        gap: 3rem;
+    }
 
-  .footer-about,
-  .footer-recent-post,
-  .footer-navi {
-      width: 100%;
-  }
+    .footer-about,
+    .footer-recent-post,
+    .footer-navi {
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
-  .footer-container {
-      padding: 2rem;
-      gap: 2rem;
-  }
+    .footer-container {
+        padding: 2rem;
+        gap: 2rem;
+    }
 
-  .footer-about,
-  .footer-recent-post,
-  .footer-navi {
-      width: 100%;
-  }
+    .footer-about,
+    .footer-recent-post,
+    .footer-navi {
+        width: 100%;
+    }
 
-  .footer-recent-post ul,
-  .footer-navi ul {
-      margin-top: 2rem;
-  }
+    .footer-recent-post ul,
+    .footer-navi ul {
+        margin-top: 2rem;
+    }
 }

@@ -2,11 +2,10 @@
     text-align: center;
     padding: 20px;
     background-color: #e0e0e0;
-    
-  }
-  
-  .animated-button {
-    background-color: #508D4E; 
+}
+
+.animated-button {
+    background-color: #508d4e;
     border: none;
     color: white;
     padding: 15px 30px;
@@ -20,15 +19,15 @@
     border-radius: 5px;
     position: relative;
     overflow: hidden;
-  }
-  
-  .animated-button:hover {
-    background-color: #6d9c30; 
+}
+
+.animated-button:hover {
+    background-color: #6d9c30;
     scale: 1.1;
     transition-duration: 800ms;
-  }
-  
-  .animated-button:before {
+}
+
+.animated-button:before {
     content: '';
     position: absolute;
     top: 50%;
@@ -40,14 +39,14 @@
     border-radius: 50%;
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.1);
-  }
-  
-  .animated-button:hover:before {
+}
+
+.animated-button:hover:before {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
-  }
-  
-  .animated-button:after {
+}
+
+.animated-button:after {
     content: '';
     position: absolute;
     top: 50%;
@@ -59,41 +58,41 @@
     border-radius: 50%;
     opacity: 0;
     transform: translate(-50%, -50%);
-  }
-  
-  .animated-button:hover:after {
+}
+
+.animated-button:hover:after {
     width: 200%;
     height: 200%;
     opacity: 1;
     transform: translate(-50%, -50%);
-  }
-  
+}
+
 @media (max-width: 576px) {
-  .portfolio-container {
-    padding: 10px;
-  }
+    .portfolio-container {
+        padding: 10px;
+    }
 
-  .animated-button {
-    padding: 10px 20px;
-    font-size: 14px;
-  }
+    .animated-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
 
-  .animated-button:hover {
-    scale: 1.05;
-  }
+    .animated-button:hover {
+        scale: 1.05;
+    }
 
-  .animated-button:before,
-  .animated-button:after {
-    width: 200%;
-    height: 200%;
-  }
+    .animated-button:before,
+    .animated-button:after {
+        width: 200%;
+        height: 200%;
+    }
 
-  .animated-button:hover:before {
-    transform: translate(-50%, -50%) scale(0.9);
-  }
+    .animated-button:hover:before {
+        transform: translate(-50%, -50%) scale(0.9);
+    }
 
-  .animated-button:hover:after {
-    width: 150%;
-    height: 150%;
-  }
+    .animated-button:hover:after {
+        width: 150%;
+        height: 150%;
+    }
 }
