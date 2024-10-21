@@ -5,7 +5,8 @@ import { countryList } from '../utils/countryList';
 import { enquiryFormSchema } from '../utils/schema';
 import './ContactForm.css';
 
-const port = import.meta.env.VITE_PORT;
+const BASE_URL = import.meta.env.VITE_BASE_URL;
+
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
@@ -31,10 +32,9 @@ const ContactForm = () => {
         console.log(formData);
     };
 
-    const handleSubmit = async (e) => {
+     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            console.log('the formdata here is: ', formData);
             const validatedFields = enquiryFormSchema.safeParse({
                 name: formData.name,
                 email: formData.email,
