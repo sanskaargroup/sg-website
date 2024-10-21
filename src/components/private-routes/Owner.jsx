@@ -19,6 +19,25 @@ const Owner = () => {
         setSelectedProfile(event.target.value);
     };
 
+    function convertUnixTimestamp(timestamp) {
+        const date = new Date(timestamp); // Convert the timestamp to a Date object
+
+        // Use toLocaleString to get a readable format for day, date, and time
+        const day = date.toLocaleDateString('en-US', { weekday: 'long' });
+        const datePart = date.toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+        });
+        const timePart = date.toLocaleTimeString('en-US', {
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit',
+        });
+
+        return `${day}, ${datePart} ${timePart}`;
+    }
+
     const handleSubmit = async () => {
         if (!selectedTime || !selectedProfile) {
             setError('Please select both a time duration and a profile.');
@@ -32,6 +51,7 @@ const Owner = () => {
                 `${BASE_URL}/api/enquirydata?time=${selectedTime}&profile=${selectedProfile}`
             );
             const result = await response.json();
+            console.log('inside owner, result.data: ', result.data);
 
             if (response.ok) {
                 setEnquiries(result.data);
@@ -57,6 +77,7 @@ const Owner = () => {
                           'Country',
                           'City',
                           'Query',
+                          'Date',
                       ]
                     : [
                           'S.No',
@@ -66,6 +87,7 @@ const Owner = () => {
                           'Aadhar',
                           'YOE',
                           'Address',
+                          'Date',
                       ],
             ],
             body: enquiries.map((enquiry, index) =>
@@ -78,6 +100,7 @@ const Owner = () => {
                           enquiry.country,
                           enquiry.city,
                           enquiry.query,
+                          convertUnixTimestamp(enquiry.timestamp),
                       ]
                     : [
                           index + 1,
@@ -87,6 +110,7 @@ const Owner = () => {
                           enquiry.aadhar,
                           enquiry.yoe,
                           enquiry.address,
+                          convertUnixTimestamp(enquiry.timestamp),
                       ]
             ),
         });
@@ -150,6 +174,7 @@ const Owner = () => {
                                         <th style={styles.th}>Address</th>
                                     </>
                                 )}
+                                <th style={styles.th}>Date</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -184,6 +209,11 @@ const Owner = () => {
                                             </td>
                                         </>
                                     )}
+                                    <td style={styles.td}>
+                                        {convertUnixTimestamp(
+                                            enquiry.timestamp
+                                        )}
+                                    </td>
                                 </tr>
                             ))}
                         </tbody>
