@@ -1,5 +1,9 @@
 import { useRef } from 'react';
-import { MdEmojiFoodBeverage, MdFoodBank, MdOutlineEventAvailable } from 'react-icons/md';
+import {
+    MdEmojiFoodBeverage,
+    MdFoodBank,
+    MdOutlineEventAvailable,
+} from 'react-icons/md';
 import { useNavigate } from 'react-router-dom';
 import BackgroundImage from '../image/Services.gif';
 import './Services.css';
