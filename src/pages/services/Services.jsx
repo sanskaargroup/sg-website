@@ -2,6 +2,7 @@ import './Services.css';
 import BackgroundImage from '../../image/s7.jpg';
 import eventImage1 from '../../image/ser1.jpg';
 import eventImage2 from '../../image/ser2.jpg';
+import flagImage from '../../image/flagImg.jpeg';
 import eventImage3 from '../../image/ser3.jpg';
 import eventImage4 from '../../image/consult.jpg';
 const Services = () => {
@@ -129,7 +130,7 @@ const Services = () => {
                 <div className="private-events">
                     <div className="image-section">
                         <img
-                            src={eventImage3}
+                            src={flagImage}
                             id="hov"
                             alt="Private/Social Event"
                         />
