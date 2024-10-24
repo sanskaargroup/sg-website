@@ -35,39 +35,60 @@ const CorporateEvents = () => {
                     </h2>
                 </div>
                 <div className="year-wise">
-                    <div className="year0 , eventcard">
+                    <div className="year3 , eventcard">
                         <div className="year-intro">
                             <div className="line-intro"></div>
-                            <h3>2016-2017</h3>
+                            <h3>2023-2024</h3>
                             <div className="line-intro"></div>
                         </div>
                         <div className="year0-content">
-                            <img src={year0} alt="" />
+                            <img src={year3} alt="" />
                             <ul>
-                                <li>INDIA PHARMA 2016</li>
-                                <li>INDIA HOSPITAL SUMMIT 2016</li>
-                                <li>ADVANTAGE HEALTHCARE INDIA 2016</li>
-                                <li>INDIA HOSPITAL SUMMIT 2017</li>
-                                <li>INDIA PHARMA 2017</li>
-                                <li>INDIA MEDICAL DEVICE EXPO 2017</li>
-                                <li>AAJEEVIKA 2017</li>
-                                <li>GES 2017</li>
+                                <li>World Food India 2024</li>
+                                <li>Stonemart 2024 at Jaipur</li>
+                                <li>Bharattech 2024 at Delhi</li>
+                                <li>EIMA AGRIMACH at Bangalore 2024</li>
+                                <li>Manthan (at Bangalore) 2023</li>
+                                <li>Higher Education Submit 2023</li>
+                                <li>Road Safety at Pusa 2023</li>
+                                <li>India Steel 2023</li>
+                                <li>G20 Bangalore 2023</li>
+                                <li>G20 Gandhinagar 2023</li>
+                                <li>G20 Mumbai 2023</li>
+                                <li>World Food India 2023</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="year2 , eventcard">
+                        <div className="year-intro">
+                            <div className="line-intro"></div>
+                            <h3>2018-2019</h3>
+                            <div className="line-intro"></div>
+                        </div>
+                        <div className="year0-content">
+                            <img src={year2} alt="" />
+                            <ul>
+                                <li>Hestourex 2019: Antalya, Turkey</li>
                                 <li>
-                                    INDIA -- AFRICA HEALTH CO- OPERATION PROGRAM
-                                    2017
+                                    Namaskar Africa 2019: Kenya and Tanzania
                                 </li>
+                                <li>ExpoMed 2019: Batumi, Georgia</li>
                                 <li>
-                                    INDIA INTEGRATED LOGISTICS & TRANSPORT
-                                    SUMMIT 2017
+                                    Oman Health Exhibition and Conference
+                                    2019Muscat, Oman
                                 </li>
-                                <li>ADVANTAGE HEALTHCARE INDIA 2017</li>
+                                <li>Mtech 2019Kiev, Ukraine</li>
                                 <li>
-                                    BIRTH CENTENARY CELEBRATIONS OF NANAJI
-                                    DESHMUKH 2017
+                                    2nd Medical Tourism Asia Summit
+                                    2019Kathmandu, Nepal
                                 </li>
-                                <li>HES 2017</li>
-                                <li>INTERNATIONAL AROGYA 2017</li>
-                                <li>EIMA AGRIMACH 2017</li>
+                                <li>L SUMMIT 2018</li>
+                                <li>KRISHI UNNATI 2018</li>
+                                <li>ADVANTAGE HEALTHCARE INDIA 2018</li>
+                                <li>AILBS 2019</li>
+                                <li>COP 14</li>
+                                <li>Advantage Healthcare India 2019</li>
+                                <li>International Arogya 2019</li>
                             </ul>
                         </div>
                     </div>
@@ -103,60 +124,39 @@ const CorporateEvents = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="year2 , eventcard">
+                    <div className="year0 , eventcard">
                         <div className="year-intro">
                             <div className="line-intro"></div>
-                            <h3>2018-2019</h3>
+                            <h3>2016-2017</h3>
                             <div className="line-intro"></div>
                         </div>
                         <div className="year0-content">
-                            <img src={year2} alt="" />
+                            <img src={year0} alt="" />
                             <ul>
-                                <li>Hestourex 2019: Antalya, Turkey</li>
+                                <li>INDIA PHARMA 2016</li>
+                                <li>INDIA HOSPITAL SUMMIT 2016</li>
+                                <li>ADVANTAGE HEALTHCARE INDIA 2016</li>
+                                <li>INDIA HOSPITAL SUMMIT 2017</li>
+                                <li>INDIA PHARMA 2017</li>
+                                <li>INDIA MEDICAL DEVICE EXPO 2017</li>
+                                <li>AAJEEVIKA 2017</li>
+                                <li>GES 2017</li>
                                 <li>
-                                    Namaskar Africa 2019: Kenya and Tanzania
+                                    INDIA -- AFRICA HEALTH CO- OPERATION PROGRAM
+                                    2017
                                 </li>
-
-                                <li>ExpoMed 2019: Batumi, Georgia</li>
                                 <li>
-                                    Oman Health Exhibition and Conference
-                                    2019Muscat, Oman
+                                    INDIA INTEGRATED LOGISTICS & TRANSPORT
+                                    SUMMIT 2017
                                 </li>
-                                <li>Mtech 2019Kiev, Ukraine</li>
+                                <li>ADVANTAGE HEALTHCARE INDIA 2017</li>
                                 <li>
-                                    2nd Medical Tourism Asia Summit
-                                    2019Kathmandu, Nepal
+                                    BIRTH CENTENARY CELEBRATIONS OF NANAJI
+                                    DESHMUKH 2017
                                 </li>
-                                <li>L SUMMIT 2018</li>
-                                <li>KRISHI UNNATI 2018</li>
-                                <li>ADVANTAGE HEALTHCARE INDIA 2018</li>
-                                <li>AILBS 2019</li>
-                                <li>COP 14</li>
-                                <li>Advantage Healthcare India 2019</li>
-                                <li>International Arogya 2019</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="year3 , eventcard">
-                        <div className="year-intro">
-                            <div className="line-intro"></div>
-                            <h3>2023-2024</h3>
-                            <div className="line-intro"></div>
-                        </div>
-                        <div className="year0-content">
-                            <img src={year3} alt="" />
-                            <ul>
-                                <li>Manthan (at Bangalore) 2023</li>
-                                <li>Higher Education Submit 2023</li>
-                                <li>Road Safety at Pusa 2023</li>
-                                <li>India Steel 2023</li>
-                                <li>G20 Bangalore 2023</li>
-                                <li>G20 Gandhinagar 2023</li>
-                                <li>G20 Mumbai 2023</li>
-                                <li>World Food India 2023</li>
-                                <li>Stonemart 2024 at Jaipur</li>
-                                <li>Bharattech 2024 at Delhi</li>
-                                <li>EIMA AGRIMACH at Bangalore 2024</li>
+                                <li>HES 2017</li>
+                                <li>INTERNATIONAL AROGYA 2017</li>
+                                <li>EIMA AGRIMACH 2017</li>
                             </ul>
                         </div>
                     </div>

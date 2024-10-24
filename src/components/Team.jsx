@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import { FaChevronDown, FaFacebook } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa6';
 import { LuInstagram } from 'react-icons/lu';
@@ -7,6 +8,7 @@ import Gauransh from '../image/logo/Gauransh.jpeg';
 import sanya from '../image/logo/sanya.jpeg';
 import team1 from '../image/logo/team1.png';
 import './Team.css';
+
 const teamMembers = [
     {
         name: 'Gauransh Chopra',
@@ -45,7 +47,34 @@ const teamMembers = [
     },
 ];
 
+const ProfilePopup = ({ member, onClose }) => {
+    return (
+        <div className="profile-popup-overlay">
+            <div className="profile-popup">
+                <img src={member.image} alt={member.name} />
+                <h2>{member.name}</h2>
+                <p>{member.description}</p>
+                <button onClick={onClose}>Close</button>
+            </div>
+        </div>
+    );
+};
+
 const Team = () => {
+    const [selectedMember, setSelectedMember] = useState(null);
+
+    const handleViewProfile = (member) => {
+        if (member.name === 'Vikram Chopra') {
+            setSelectedMember({
+                ...member,
+                description:
+                    'With over 27 years of industry experience, Vikram Chopra is a seasoned expert in event management, renowned for his commitment to innovation and excellence. His leadership in both domestic and international delegations has earned widespread recognition for his outstanding management and operational skills. Under his guidance, our team is driven to consistently deliver top-tier event solutions that exceed client expectations.',
+            });
+        } else {
+            window.open(member.social.profile, '_blank');
+        }
+    };
+
     return (
         <div className="mem">
             <div
@@ -96,15 +125,19 @@ const Team = () => {
                         </div>
                         <button
                             className="profile"
-                            onClick={() =>
-                                window.open(member.social.profile, '_blank')
-                            }
+                            onClick={() => handleViewProfile(member)}
                         >
                             View Profile
                         </button>
                     </div>
                 ))}
             </div>
+            {selectedMember && (
+                <ProfilePopup
+                    member={selectedMember}
+                    onClose={() => setSelectedMember(null)}
+                />
+            )}
         </div>
     );
 };

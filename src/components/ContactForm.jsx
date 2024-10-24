@@ -7,7 +7,6 @@ import './ContactForm.css';
 
 const BASE_URL = import.meta.env.VITE_BASE_URL;
 
-
 const ContactForm = () => {
     const [formData, setFormData] = useState({
         name: '',
@@ -32,7 +31,7 @@ const ContactForm = () => {
         console.log(formData);
     };
 
-     const handleSubmit = async (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         try {
             const validatedFields = enquiryFormSchema.safeParse({
