@@ -1,23 +1,29 @@
-const now = new Date().valueOf();
-console.log("now: ", now);
+// server/utils/date.js
+function getDateRange(time) {
+    const now = Date.now(); // Get the current time in milliseconds
+    let dateRange;
 
-// Calculate date ranges
-const oneDayAgo = now - (24*60*60*1000);
-console.log("oneDayAgo: ", oneDayAgo);
+    switch (time) {
+        case '1d':
+            dateRange = now - (24 * 60 * 60 * 1000);
+            break;
+        case '1w':
+            dateRange = now - (7 * 24 * 60 * 60 * 1000);
+            break;
+        case '1m':
+            dateRange = now - (30 * 24 * 60 * 60 * 1000);
+            break;
+        case '3m':
+            dateRange = now - (90 * 24 * 60 * 60 * 1000);
+            break;
+        case '6m':
+            dateRange = now - (180 * 24 * 60 * 60 * 1000);
+            break;
+        default:
+            dateRange = null; // Handle invalid time parameters
+    }
 
-const oneWeekAgo = now - (7*24*60*60*1000);
-console.log("oneWeekAgo: ", oneWeekAgo);
+    return dateRange;
+}
 
-const oneMonthAgo = now - (30*24*60*60*1000);
-console.log("oneMonthAgo: ", oneMonthAgo);
-
-const threeMonthsAgo = now - (90*24*60*60*1000);
-console.log("threeMonthsAgo: ", threeMonthsAgo);
-
-const sixMonthsAgo = now - (180*24*60*60*1000);
-console.log("sixMonthsAgo: ", sixMonthsAgo);
-
-
-
-
-export {now, oneDayAgo, oneWeekAgo, oneMonthAgo, threeMonthsAgo, sixMonthsAgo};
+export { getDateRange };

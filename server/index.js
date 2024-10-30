@@ -7,18 +7,12 @@ import mongoose from 'mongoose';
 import path, { dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { Career, Enquiry, Owner } from './db/db.js';
-import {
-    oneDayAgo,
-    oneMonthAgo,
-    oneWeekAgo,
-    sixMonthsAgo,
-    threeMonthsAgo,
-} from './utils/date.js';
+import { getDateRange } from './utils/date.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-dotenv.config({path: "../.env"});
+dotenv.config({ path: '../.env' });
 // dotenv.config();
 const app = express();
 app.use(express.json());
@@ -136,10 +130,88 @@ app.post('/api/career', async (req, res) => {
 // 	}
 // });
 
+// app.get('/api/enquirydata', async (req, res) => {
+//     try {
+//         console.log('req.query: ', req.query);
+//         const { profile, time } = req.query;
+//         let topic;
+//         switch (profile) {
+//             case 'enquirydata':
+//                 topic = 'enquiry';
+//                 break;
+//             case 'careerdata':
+//                 topic = 'career';
+//                 break;
+//             default:
+//                 topic = null; // Set to null for clarity
+//         }
+//         console.log('the topic is: ', topic);
+
+//         if (topic === null) {
+//             return res.status(404).json({ message: 'topic null' });
+//         }
+//         if (topic === undefined) {
+//             return res.status(404).json({ message: 'topic undefined' });
+//         }
+
+//         console.log('time: ', time);
+//         let entryTime;
+//         switch (time) {
+//             case '1d':
+//                 entryTime = oneDayAgo;
+//                 break;
+//             case '1w':
+//                 entryTime = oneWeekAgo;
+//                 break;
+//             case '1m':
+//                 entryTime = oneMonthAgo;
+//                 break;
+//             case '3m':
+//                 entryTime = threeMonthsAgo;
+//                 break;
+//             case '6m':
+//                 entryTime = sixMonthsAgo;
+//                 break;
+//             default:
+//                 entryTime = null; // Set to null for clarity
+//         }
+//         console.log('the entryTime is: ', entryTime);
+
+//         if (entryTime === null) {
+//             return res.status(404).json({ message: 'time id null' });
+//         }
+//         if (entryTime === undefined) {
+//             return res.status(404).json({ message: 'time is undefined' });
+//         }
+
+//         console.log('profile: ', profile);
+//         if (profile === 'enquirydata') {
+//             console.log('running query for enquiry');
+//             const enquiries = await Enquiry.find({
+//                 timestamp: { $gte: entryTime },
+//             });
+//             console.log('enquiries: ', enquiries);
+//             res.status(200).json({ data: enquiries });
+//         } else if (profile === 'careerdata') {
+//             console.log('running query for career');
+//             const careers = await Career.find({
+//                 timestamp: { $gte: entryTime },
+//             });
+//             console.log('careers: ', careers);
+//             res.status(200).json({ data: careers });
+//         } else {
+//             res.status(404).json({ message: 'profile not found' });
+//         }
+//     } catch (e) {
+//         console.log('error: ', e);
+//         res.status(400).json({ message: 'error in GET route' });
+//     }
+// });
+
 app.get('/api/enquirydata', async (req, res) => {
     try {
-        console.log('req.query: ', req.query);
         const { profile, time } = req.query;
+
         let topic;
         switch (profile) {
             case 'enquirydata':
@@ -149,68 +221,30 @@ app.get('/api/enquirydata', async (req, res) => {
                 topic = 'career';
                 break;
             default:
-                topic = null; // Set to null for clarity
-        }
-        console.log('the topic is: ', topic);
-
-        if (topic === null) {
-            return res.status(404).json({ message: 'topic null' });
-        }
-        if (topic === undefined) {
-            return res.status(404).json({ message: 'topic undefined' });
+                return res.status(404).json({ message: 'Invalid profile' });
         }
 
-        console.log('time: ', time);
-        let entryTime;
-        switch (time) {
-            case '1d':
-                entryTime = oneDayAgo;
-                break;
-            case '1w':
-                entryTime = oneWeekAgo;
-                break;
-            case '1m':
-                entryTime = oneMonthAgo;
-                break;
-            case '3m':
-                entryTime = threeMonthsAgo;
-                break;
-            case '6m':
-                entryTime = sixMonthsAgo;
-                break;
-            default:
-                entryTime = null; // Set to null for clarity
-        }
-        console.log('the entryTime is: ', entryTime);
-
+        const entryTime = getDateRange(time);
         if (entryTime === null) {
-            return res.status(404).json({ message: 'time id null' });
-        }
-        if (entryTime === undefined) {
-            return res.status(404).json({ message: 'time is undefined' });
+            return res.status(404).json({ message: 'Invalid time parameter' });
         }
 
-        console.log('profile: ', profile);
         if (profile === 'enquirydata') {
-            console.log('running query for enquiry');
             const enquiries = await Enquiry.find({
                 timestamp: { $gte: entryTime },
             });
-            console.log('enquiries: ', enquiries);
             res.status(200).json({ data: enquiries });
         } else if (profile === 'careerdata') {
-            console.log('running query for career');
             const careers = await Career.find({
                 timestamp: { $gte: entryTime },
             });
-            console.log('careers: ', careers);
             res.status(200).json({ data: careers });
         } else {
-            res.status(404).json({ message: 'profile not found' });
+            res.status(404).json({ message: 'Profile not found' });
         }
     } catch (e) {
         console.log('error: ', e);
-        res.status(400).json({ message: 'error in GET route' });
+        res.status(400).json({ message: 'Error in GET route' });
     }
 });
 
