@@ -259,13 +259,22 @@ const CareersForm = () => {
             </form>
             <div className="contact-info">
                 <h3>
-                    Join us for{' '}
                     <a
                         style={{ color: 'green', textDecoration: 'none' }}
                         href="https://docs.google.com/forms/d/e/1FAIpQLSfGl8sVX4f7C-hZnglDJOVp8htpZwmKPh8OyQmFJ5STRH4l0w/viewform?usp=sf_link"
                     >
-                        Project Based Employment
-                    </a>
+                        Click here
+                    </a>{' '}
+                    for Project Based Employment
+                    <button
+                        onClick={() =>
+                            (window.location.href =
+                                'https://docs.google.com/forms/d/e/1FAIpQLSfGl8sVX4f7C-hZnglDJOVp8htpZwmKPh8OyQmFJ5STRH4l0w/viewform?usp=sf_link')
+                        }
+                        style={{ marginLeft: '10px' }}
+                    >
+                        Apply
+                    </button>
                 </h3>
                 <h3>Email:</h3>
                 <p>info@sanskaargroup.com</p>
