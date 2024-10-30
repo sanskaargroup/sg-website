@@ -51,6 +51,7 @@ const Owner = () => {
                 `${BASE_URL}/api/enquirydata?time=${selectedTime}&profile=${selectedProfile}`
             );
             const result = await response.json();
+            result.data = result.data.reverse();
             console.log('inside owner, result.data: ', result.data);
 
             if (response.ok) {
@@ -151,80 +152,105 @@ const Owner = () => {
 
             {error && <p style={{ color: 'red' }}>{error}</p>}
 
-            <h2>Enquiry Data</h2>
-            {enquiries.length > 0 ? (
-                <>
-                    <table style={styles.table}>
-                        <thead>
-                            <tr>
-                                <th style={styles.th}>S.No</th>
-                                <th style={styles.th}>Name</th>
-                                <th style={styles.th}>Email</th>
-                                <th style={styles.th}>Phone</th>
-                                {selectedProfile === 'enquirydata' ? (
-                                    <>
-                                        <th style={styles.th}>Country</th>
-                                        <th style={styles.th}>City</th>
-                                        <th style={styles.th}>Query</th>
-                                    </>
-                                ) : (
-                                    <>
-                                        <th style={styles.th}>Aadhar</th>
-                                        <th style={styles.th}>YOE</th>
-                                        <th style={styles.th}>Address</th>
-                                    </>
-                                )}
-                                <th style={styles.th}>Date</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {enquiries.map((enquiry, index) => (
-                                <tr key={enquiry._id}>
-                                    <td style={styles.td}>{index + 1}</td>
-                                    <td style={styles.td}>{enquiry.name}</td>
-                                    <td style={styles.td}>{enquiry.email}</td>
-                                    <td style={styles.td}>{enquiry.phone}</td>
-                                    {selectedProfile === 'enquirydata' ? (
-                                        <>
-                                            <td style={styles.td}>
-                                                {enquiry.country}
-                                            </td>
-                                            <td style={styles.td}>
-                                                {enquiry.city}
-                                            </td>
-                                            <td style={styles.td}>
-                                                {enquiry.query}
-                                            </td>
-                                        </>
-                                    ) : (
-                                        <>
-                                            <td style={styles.td}>
-                                                {enquiry.aadhar}
-                                            </td>
-                                            <td style={styles.td}>
-                                                {enquiry.yoe}
-                                            </td>
-                                            <td style={styles.td}>
-                                                {enquiry.address}
-                                            </td>
-                                        </>
-                                    )}
-                                    <td style={styles.td}>
-                                        {convertUnixTimestamp(
-                                            enquiry.timestamp
+            <div>
+                <h2>Enquiry Data</h2>
+                <div style={{marginTop: "10px", overflowX: "auto", overflowY: "auto"}} id="data-div">
+                    {enquiries.length > 0 ? (
+                        <>
+                            <table style={styles.table}>
+                                <thead>
+                                    <tr>
+                                        <th style={styles.th}>S.No</th>
+                                        <th style={styles.th}>Name</th>
+                                        <th style={styles.th}>Email</th>
+                                        <th style={styles.th}>Phone</th>
+                                        {selectedProfile === 'enquirydata' ? (
+                                            <>
+                                                <th style={styles.th}>
+                                                    Country
+                                                </th>
+                                                <th style={styles.th}>City</th>
+                                                <th style={styles.th}>Query</th>
+                                            </>
+                                        ) : (
+                                            <>
+                                                <th style={styles.th}>
+                                                    Aadhar
+                                                </th>
+                                                <th style={styles.th}>YOE</th>
+                                                <th style={styles.th}>
+                                                    Address
+                                                </th>
+                                            </>
                                         )}
-                                    </td>
-                                </tr>
-                            ))}
-                        </tbody>
-                    </table>
-                    <button onClick={exportPDF} style={{ marginTop: '10px' }}>
-                        Export to PDF
-                    </button>
-                </>
-            ) : (
-                <p>No data available for the selected duration and profile.</p>
-            )}
+                                        <th style={styles.th}>Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {enquiries.map((enquiry, index) => (
+                                        <tr key={enquiry._id}>
+                                            <td style={styles.td}>
+                                                {index + 1}
+                                            </td>
+                                            <td style={styles.td}>
+                                                {enquiry.name}
+                                            </td>
+                                            <td style={styles.td}>
+                                                {enquiry.email}
+                                            </td>
+                                            <td style={styles.td}>
+                                                {enquiry.phone}
+                                            </td>
+                                            {selectedProfile ===
+                                            'enquirydata' ? (
+                                                <>
+                                                    <td style={styles.td}>
+                                                        {enquiry.country}
+                                                    </td>
+                                                    <td style={styles.td}>
+                                                        {enquiry.city}
+                                                    </td>
+                                                    <td style={styles.td}>
+                                                        {enquiry.query}
+                                                    </td>
+                                                </>
+                                            ) : (
+                                                <>
+                                                    <td style={styles.td}>
+                                                        {enquiry.aadhar}
+                                                    </td>
+                                                    <td style={styles.td}>
+                                                        {enquiry.yoe}
+                                                    </td>
+                                                    <td style={styles.td}>
+                                                        {enquiry.address}
+                                                    </td>
+                                                </>
+                                            )}
+                                            <td style={styles.td}>
+                                                {convertUnixTimestamp(
+                                                    enquiry.timestamp
+                                                )}
+                                            </td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                            <button
+                                onClick={exportPDF}
+                                style={{ marginTop: '10px' }}
+                            >
+                                Export to PDF
+                            </button>
+                        </>
+                    ) : (
+                        <p>
+                            No data available for the selected duration and
+                            profile.
+                        </p>
+                    )}
+                </div>
+            </div>
         </div>
     );
 };
