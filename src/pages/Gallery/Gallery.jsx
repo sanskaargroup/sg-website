@@ -82,9 +82,9 @@ const events = [
         id: id++,
         title: 'Namaskar Africa 2019',
         photoLink: [
-            'https://drive.google.com/file/d/1PSFO7SRCKZZ4MEF4Vaca0X3jLnYLVI0N/view',
+           // 'https://drive.google.com/file/d/1PSFO7SRCKZZ4MEF4Vaca0X3jLnYLVI0N/view',
             'https://drive.google.com/file/d/1Dc0YebO48Ht0l8KWY80xWhYMFrLXIYT0/view?usp=drive_link',
-            'https://drive.google.com/file/d/1CvD2qCj6VRlV8cNd9SFQWOVG3RPSuUhu/view?usp=drive_link',
+          //  'https://drive.google.com/file/d/1CvD2qCj6VRlV8cNd9SFQWOVG3RPSuUhu/view?usp=drive_link',
         ],
         folderLink:
             'https://drive.google.com/drive/folders/1MdKPLG0wJzJdRHojFWVvdfIkTB7GRZO7?usp=drive_link',
