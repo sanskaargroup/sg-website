@@ -2,14 +2,14 @@ import BackgroundImage from '../../image/s7.jpg';
 import BackgroundImage1 from '../../image/animate.gif';
 import year1 from '../../image/header1.jpg';
 import year0 from '../../image/event.jpg';
-import year2 from '../../image/event1.jpg';
+//import year2 from '../../image/event1.jpg';
 import year3 from '../../image/event2.jpg';
 import image1 from '../../image/image1.jpg';
 import image2 from '../../image/image2.jpg';
 import image3 from '../../image/image3.jpg';
 import image4 from '../../image/image4.jpg';
-import image5 from '../../image/image5.jpg';
-import image6 from '../../image/image6.jpg';
+//import image5 from '../../image/image5.jpg';
+//import image6 from '../../image/image6.jpg';
 import image7 from '../../image/image7.jpg';
 import image8 from '../../image/image8.jpg';
 
